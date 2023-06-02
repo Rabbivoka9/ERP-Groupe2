@@ -209,6 +209,142 @@ margin-top: 220px;
 }
 
 
+.FormDelais-Cota{
+  width: 306px;
+  height: 245px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1400px;
+  margin-top: 540px;
+}
+
+.Nom-client{
+  font-size:20px ;
+  font-weight:bold ;
+  margin-left: 30px;
+}
+
+.dispo-nonProsuit{
+  display: flex;
+}
+
+.Nom-Produit{
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.boule-vert{
+  margin-left: 30px;
+  margin-top: 23px;
+  width: 13px;
+  height: 13px;
+  background-color: #4ACC67;
+  border-radius: 20px 20px 20px;
+}
+
+.icon-time{
+  width: 13px;
+  height: 13px;
+  margin-top: 10px;
+}
+
+.dispo-hor-date{
+  display: flex;
+  gap: 3px;
+}
+
+.date{
+  font-size: 10px;
+}
+
+.btn-voirPlus{
+  background-color: white;
+  font-size: 14px;
+  color: #644ACC;
+  border-style: none;
+}
+
+.dispoGen-datHor-voir{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+  gap: 70px;
+}
+
+.ligne-cotation1{
+  margin-top: 80px;
+  width: 235px;
+}
+
+
+.FormDelais-Cota1{
+  width: 306px;
+  height: 245px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: 40px;
+  margin-top: 540px;
+}
+
+.FormDelais-Cota3{
+  width: 306px;
+  height: 245px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: 50px;
+  margin-top: 540px;
+}
+
+.FormCo{
+  display: flex;
+  margin-left: 4px;
+  gap: 50px;
+}
+
+
+.FormProd1{
+  width: 145px;
+  height: 129px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: -1200px;
+  margin-top: 200px;
+}
+
+.Cont-loadPour{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+
+
+.icon-load{
+  width: 68px;
+  height: 68px;
+}
+
+.Pource{
+  margin-top: -55px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #644ACC;
+}
+
+
+.NameProduit{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
 
 
 

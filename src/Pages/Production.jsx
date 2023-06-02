@@ -1,5 +1,6 @@
 import Header from "../Composants/Navbar"
 import Bar from "../Composants/BarRech"
+import FormProd from "../Composants/FormProd1"
 
 
 
@@ -12,6 +13,9 @@ function Productions(){
             <Header/>
             <Bar/>
         </div>
+
+        <FormProd/>
+
         
 
         

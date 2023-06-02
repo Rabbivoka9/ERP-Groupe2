@@ -1,10 +1,7 @@
-
-
-
-function FormCota1(){
+function FormCota2(){
     return(
-        <div className="FormDelais-Cota">
-            <h4 className="Nom-client">Kibali Gold</h4>
+        <div className="FormDelais-Cota1">
+            <h4 className="Nom-client">Rwashi Mining</h4>
             <div className="dispo-nonProsuit">
                 <div className="boule-vert"></div>
                 <h4 className="Nom-Produit">Equiments pour Agens de Terrain</h4>
@@ -19,4 +16,4 @@ function FormCota1(){
             </div>
         </div>
     )
-}export default FormCota1
+}export default FormCota2
