@@ -5,7 +5,7 @@ function Tcomande (){
     return (
 
 
-        <div className="Cont-tableau1">
+        <div className="Cont-tableau">
 
                 <div className="cont-plan">
                     <div className="cont-p"><h4 className="Plan-name">Commandes</h4></div>

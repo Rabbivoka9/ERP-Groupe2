@@ -18,28 +18,20 @@ function Tstock (){
                     
                 </div>
                 <div>
-                     <Table className="tab-titre">
+                     <Table className="tab-titre5">
                             <thead >
                                 <tr>
                                 <th data-field="id">
-                                    Articles
+                                    Clients
                                 </th>
                                 <th data-field="name">
-                                    Stocks
+                                    Designation
                                 </th>
-                                <th data-field="price">
-                                    Etat
-                                </th>
-                                <th data-field="price">
-                                    Prix
-                                </th>
-
                                 <th data-field="price">
                                     Date
                                 </th>
-
                                 <th data-field="price">
-                                    Action
+                                    Etat
                                 </th>
                                 </tr>
                             </thead>

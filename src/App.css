@@ -461,7 +461,7 @@ margin-top: 220px;
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-left: -1200px;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .cont-plan5{
@@ -473,8 +473,17 @@ margin-top: 220px;
   color: white;
 }
 
-.cont-p{
-  margin-left: -20px;
+.cont-plan5{
+  margin-top: -10px;
+ padding-left: 40px;
+}
+
+
+
+
+.tab-titre5{
+  width: 700px;
+  margin-left: 130px;
 }
 
 
