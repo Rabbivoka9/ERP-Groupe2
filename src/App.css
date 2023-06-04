@@ -339,6 +339,145 @@ margin-top: 220px;
   margin-left: 50px;
 }
 
+.FormProd2{
+  width: 145px;
+  height: 129px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+.Pource1{
+  margin-top: -55px;
+  margin-left: 22px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.Cont-formProd{
+  margin-top: -30px;
+  display: flex;
+  margin-left: 150px;
+}
+
+
+.Cont-tableau{
+  width: 836px;
+  height: 385px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1300px;
+  margin-top: 430px;
+}
+
+.cont-plan{
+  margin-top: -40px;
+  margin-left: 60px;
+  width: 703px;
+  height: 57px;
+  border-radius: 10px 10px 10px;
+  background-color: #644ACC;
+  color: white;
+}
+
+.Plan-name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 270px;
+  padding: 10px;
+ 
+}
+
+
+.tab-titre{
+  width: 600px;
+  margin-left: 130px;
+}
+
+.icon-plus{
+  width: 40px;
+  height: 40px;
+}
+
+.btn-plus{
+  background-color: white;
+  border-style: none;
+  margin-top: 88px;
+  margin-left: 700px;
+}
+
+.btn-plus1{
+  background-color: white;
+  border-style: none;
+  margin-top: 200px;
+  width: 124px;
+  height: 31px;
+  border-radius: 10px 10px 10px;
+  font-size: 11px;
+  background-color: #644ACC;
+  color: white;
+ 
+  margin-left: -500px;
+}
+
+
+
+
+
+.Cont-tableau1{
+  width: 836px;
+  height: 485px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1200px;
+  margin-top: 90px;
+}
+
+.Cont-tableau{
+  width: 836px;
+  height: 485px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1200px;
+  margin-top: 230px;
+}
+
+.Cont-tableau3{
+  width: 836px;
+  height: 485px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1300px;
+  margin-top: 360px;
+}
+
+
+
+.Cont-tableau5{
+  width: 899px;
+  height: 530px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-left: -1200px;
+  margin-top: 90px;
+}
+
+.cont-plan5{
+  margin-left: 45px;
+  width: 825px;
+  height: 57px;
+  border-radius: 20px 20px 20px;
+  background-color: #644ACC;
+  color: white;
+}
+
+.cont-p{
+  margin-left: -20px;
+}
+
+
 
 
 

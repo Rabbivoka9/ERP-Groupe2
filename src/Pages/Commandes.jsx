@@ -1,5 +1,6 @@
 import Header from "../Composants/Navbar"
 import Bar from "../Composants/BarRech"
+import Tcomande from "../Composants/TableauCom"
 
 
 function Commandes(){
@@ -10,6 +11,8 @@ function Commandes(){
             <Header/>
             <Bar/>
         </div>
+        <Tcomande/>
+
         
 
         
