@@ -1,34 +1,177 @@
-
-body{
+body {
   background-color: #D6D1D1;
 }
-.logo{
+
+.logo {
   width: 100%;
   max-width: 180px;
   margin-left: -40px;
 }
 
-.tout1{
+.tout1 {
   display: flex;
+  justify-content: center;
   height: auto;
 }
 
-.bordu{
+.bordu {
   display: flex;
- 
+  justify-content: center;
+
 }
 
-.btnsearch{
+.Fond-login {
+  background-image: url("/public/Connexion.png");
+  background-size: cover;
+  height: 786px;
+  width: auto;
+}
+
+.Fond-login1 {
+  background-image: url("/public/Connexion.png");
+  background-size: cover;
+  height: 286px;
+  width: auto;
+}
+
+
+.contbarv{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cont-log {
+  display: flex;
+  justify-content: center;
+  gap: 20PX;
+}
+
+.log-icon {
+  width: 758px;
+}
+
+
+.menu-login, .menu-login1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 463px;
+  height: 427px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-top: 160px;
+  text-align: center;
+}
+
+.menu-login1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 463px;
+  height: 508px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-top: 160px;
+  text-align: center;
+}
+
+
+.Email1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 20px;
+  gap: 20Px;
+}
+
+
+
+
+
+
+.Email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 20Px;
+}
+
+
+.btn-Conex {
+  width: 390px;
+  height: 52px;
+  background-color: #644ACC;
+  border-style: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.outlined-basic {
+  width: 390px;
+  
+}
+
+.textarea.materialize-textarea {
+  border-bottom: 0px;
+}
+
+
+
+
+.cont-bienv {
+  width: 213px;
+  height: 43px;
+  background-color: white;
+  border-radius: 70px;
+  font-size: 32px;
+  color: #644ACC;
+  padding-left: 40px;
+  margin-top: -250px;
+  margin-left: 380px;
+}
+
+
+.titre-connexion {
+  width: 374px;
+  height: 131px;
+  border-radius: 20px 20px 20px;
+  background-color: #644ACC;
+  margin-top: -70px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border: solid 1px white;
+  padding: 30px;
+}
+
+
+.btnsearch {
   background-color: #D6D1D1;
   border: none;
   border-style: none;
   height: 13px;
   margin-top: 10px;
   margin-left: -30px;
-  
+
 }
 
-.cont-recta{
+.cont-recta {
   width: 297px;
   height: 132px;
   background-color: white;
@@ -37,7 +180,7 @@ body{
   border-radius: 15px 15px 15px;
 }
 
-.cont-recta1{
+.cont-recta1 {
   width: 297px;
   height: 132px;
   background-color: white;
@@ -46,7 +189,7 @@ body{
   border-radius: 15px 15px 15px;
 }
 
-.cont-recta2{
+.cont-recta2 {
   width: 297px;
   height: 132px;
   background-color: white;
@@ -55,30 +198,34 @@ body{
   border-radius: 15px 15px 15px;
 }
 
-.contToutrecta{
+.contToutrecta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -290px;
   margin-left: 100px;
 }
 
 
-.titre-Cotation{
+.titre-Cotation {
   margin-left: 30px;
   font-size: 15px;
   text-align: left;
 }
 
-.titre-Cotation1{
+.titre-Cotation1 {
   margin-left: 80px;
   font-size: 15px;
   text-align: left;
 }
 
-.titre-Cotation2{
+.titre-Cotation2 {
   margin-left: 98px;
   font-size: 15px;
   text-align: left;
 }
 
-.ligneFar{
+.ligneFar {
   background-color: #644ACC;
   margin-top: -15px;
   margin-left: -1398px;
@@ -87,7 +234,7 @@ body{
 }
 
 
-.titreFar{
+.titreFar {
   margin-top: 40px;
   margin-left: -1400px;
   width: 256px;
@@ -95,30 +242,30 @@ body{
   font-size: 24px;
 }
 
-.Nbre-Cotation{
+.Nbre-Cotation {
   margin-left: 200px;
   margin-top: -14px;
   font-size: 32px;
   font-weight: bold;
 }
 
-.block-cota{
+.block-cota {
   display: flex;
 }
 
-.ligne-cotation{
+.ligne-cotation {
   width: 235px;
 }
 
 
-.icon-cotation{
+.icon-cotation {
   width: 44px;
   height: 39px;
   margin-top: 7px;
   margin-left: 12px;
 }
 
-.contIcon-cotation{
+.contIcon-cotation {
   margin-top: -30px;
   margin-left: 25px;
   width: 70px;
@@ -127,7 +274,7 @@ body{
   border-radius: 10px 10px 10px;
 }
 
-.contIcon-cotation1{
+.contIcon-cotation1 {
   margin-top: -30px;
   margin-left: 25px;
   width: 70px;
@@ -136,29 +283,29 @@ body{
   border-radius: 10px 10px 10px;
 }
 
-.seach{
+.seach {
   margin-top: 90px;
-  background-color:  #D6D1D1;
-  border:  2px#010000;
+  background-color: #D6D1D1;
+  border: 2px#010000;
   margin-left: 1200px;
   display: flex;
   width: 269px;
   height: 34px;
 }
 
-.s1{
+.s1 {
   width: 16px;
- 
+
 }
 
-.s2{
+.s2 {
   width: 24px;
   height: 24px;
   margin-left: 15px;
   margin-top: 9px;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: column;
   height: 756px;
@@ -170,46 +317,46 @@ body{
 
 }
 
-.papi{
+.papi {
   margin-top: -17px;
 }
 
-.icon23{
+.icon23 {
   width: 29px;
   height: 29px;
- 
+
 }
 
-.btn31{
+.btn31 {
   display: flex;
 }
 
-.btn32{
+.btn32 {
   display: flex;
 }
 
-.btn33{
+.btn33 {
   display: flex;
 }
 
-.ligne{
+.ligne {
   background-color: white;
   height: 2px;
   width: 180px;
   margin-top: -60px;
 }
 
-.btn23{
-margin-top: 220px;
+.btn23 {
+  margin-top: 220px;
 }
 
-.btn34{ 
+.btn34 {
   display: flex;
   margin-top: 170px;
 }
 
 
-.FormDelais-Cota{
+.FormDelais-Cota {
   width: 306px;
   height: 245px;
   background-color: white;
@@ -218,22 +365,22 @@ margin-top: 220px;
   margin-top: 540px;
 }
 
-.Nom-client{
-  font-size:20px ;
-  font-weight:bold ;
+.Nom-client {
+  font-size: 20px;
+  font-weight: bold;
   margin-left: 30px;
 }
 
-.dispo-nonProsuit{
+.dispo-nonProsuit {
   display: flex;
 }
 
-.Nom-Produit{
+.Nom-Produit {
   font-size: 14px;
   margin-left: 5px;
 }
 
-.boule-vert{
+.boule-vert {
   margin-left: 30px;
   margin-top: 23px;
   width: 13px;
@@ -242,42 +389,42 @@ margin-top: 220px;
   border-radius: 20px 20px 20px;
 }
 
-.icon-time{
+.icon-time {
   width: 13px;
   height: 13px;
   margin-top: 10px;
 }
 
-.dispo-hor-date{
+.dispo-hor-date {
   display: flex;
   gap: 3px;
 }
 
-.date{
+.date {
   font-size: 10px;
 }
 
-.btn-voirPlus{
+.btn-voirPlus {
   background-color: white;
   font-size: 14px;
   color: #644ACC;
   border-style: none;
 }
 
-.dispoGen-datHor-voir{
+.dispoGen-datHor-voir {
   display: flex;
   margin-left: 30px;
   margin-top: 10px;
   gap: 70px;
 }
 
-.ligne-cotation1{
+.ligne-cotation1 {
   margin-top: 80px;
   width: 235px;
 }
 
 
-.FormDelais-Cota1{
+.FormDelais-Cota1 {
   width: 306px;
   height: 245px;
   background-color: white;
@@ -286,7 +433,7 @@ margin-top: 220px;
   margin-top: 540px;
 }
 
-.FormDelais-Cota3{
+.FormDelais-Cota3 {
   width: 306px;
   height: 245px;
   background-color: white;
@@ -295,14 +442,14 @@ margin-top: 220px;
   margin-top: 540px;
 }
 
-.FormCo{
+.FormCo {
   display: flex;
   margin-left: 4px;
   gap: 50px;
 }
 
 
-.FormProd1{
+.FormProd1 {
   width: 145px;
   height: 129px;
   background-color: white;
@@ -311,19 +458,19 @@ margin-top: 220px;
   margin-top: 200px;
 }
 
-.Cont-loadPour{
+.Cont-loadPour {
   margin-left: 40px;
   margin-top: 20px;
 }
 
 
 
-.icon-load{
+.icon-load {
   width: 68px;
   height: 68px;
 }
 
-.Pource{
+.Pource {
   margin-top: -55px;
   margin-left: 15px;
   font-size: 20px;
@@ -332,14 +479,14 @@ margin-top: 220px;
 }
 
 
-.NameProduit{
+.NameProduit {
   font-size: 14px;
   font-weight: bold;
   margin-top: 28px;
   margin-left: 50px;
 }
 
-.FormProd2{
+.FormProd2 {
   width: 145px;
   height: 129px;
   background-color: white;
@@ -348,7 +495,7 @@ margin-top: 220px;
   margin-top: 200px;
 }
 
-.Pource1{
+.Pource1 {
   margin-top: -55px;
   margin-left: 22px;
   font-size: 20px;
@@ -356,14 +503,14 @@ margin-top: 220px;
   color: black;
 }
 
-.Cont-formProd{
+.Cont-formProd {
   margin-top: -30px;
   display: flex;
   margin-left: 150px;
 }
 
 
-.Cont-tableau{
+.Cont-tableau {
   width: 836px;
   height: 385px;
   background-color: white;
@@ -372,7 +519,7 @@ margin-top: 220px;
   margin-top: 430px;
 }
 
-.cont-plan{
+.cont-plan {
   margin-top: -40px;
   margin-left: 60px;
   width: 703px;
@@ -382,33 +529,33 @@ margin-top: 220px;
   color: white;
 }
 
-.Plan-name{
+.Plan-name {
   font-size: 20px;
   font-weight: bold;
   margin-left: 270px;
   padding: 10px;
- 
+
 }
 
 
-.tab-titre{
+.tab-titre {
   width: 600px;
   margin-left: 130px;
 }
 
-.icon-plus{
+.icon-plus {
   width: 40px;
   height: 40px;
 }
 
-.btn-plus{
+.btn-plus {
   background-color: white;
   border-style: none;
   margin-top: 88px;
   margin-left: 700px;
 }
 
-.btn-plus1{
+.btn-plus1 {
   background-color: white;
   border-style: none;
   margin-top: 200px;
@@ -418,7 +565,7 @@ margin-top: 220px;
   font-size: 11px;
   background-color: #644ACC;
   color: white;
- 
+
   margin-left: -500px;
 }
 
@@ -426,7 +573,7 @@ margin-top: 220px;
 
 
 
-.Cont-tableau1{
+.Cont-tableau1 {
   width: 836px;
   height: 485px;
   background-color: white;
@@ -435,7 +582,7 @@ margin-top: 220px;
   margin-top: 90px;
 }
 
-.Cont-tableau{
+.Cont-tableau {
   width: 836px;
   height: 485px;
   background-color: white;
@@ -444,7 +591,7 @@ margin-top: 220px;
   margin-top: 230px;
 }
 
-.Cont-tableau3{
+.Cont-tableau3 {
   width: 836px;
   height: 485px;
   background-color: white;
@@ -455,7 +602,7 @@ margin-top: 220px;
 
 
 
-.Cont-tableau5{
+.Cont-tableau5 {
   width: 899px;
   height: 530px;
   background-color: white;
@@ -464,7 +611,7 @@ margin-top: 220px;
   margin-top: 50px;
 }
 
-.cont-plan5{
+.cont-plan5 {
   margin-left: 45px;
   width: 825px;
   height: 57px;
@@ -473,15 +620,15 @@ margin-top: 220px;
   color: white;
 }
 
-.cont-plan5{
+.cont-plan5 {
   margin-top: -10px;
- padding-left: 40px;
+  padding-left: 40px;
 }
 
 
 
 
-.tab-titre5{
+.tab-titre5 {
   width: 700px;
   margin-left: 130px;
 }
@@ -491,21 +638,239 @@ margin-top: 220px;
 
 
 
+@media only screen and (min-width: 328px)and (max-width:928px) {
+  .cont-log {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20PX;
+  }
+
+  .log-icon {
+    width: 358px;
+    height: 300px;
+    margin-left: -30px;
+  }
 
 
+  .menu-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 303px;
+    height: 316px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 60px;
+  }
 
 
+  .menu-login1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 303px;
+    height: 386px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 20px;
+    margin-top: 130px;
+    text-align: center;
+    margin-left: 60px;
+  }
 
 
+  .cont-bvlog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  .cont-bienv {
+    width: 13px;
+    height: 43px;
+    background-color: white;
+    border-radius: 70px;
+    font-size: 32px;
+    color: #644ACC;
+    padding-left: 40px;
+    margin-top: -70px;
+    margin-left: 0px;
+  }
+
+  .Fond-login {
+    background-image: url("/public/Connexion.png");
+    background-size: cover;
+    height: 986px;
+    width: auto;
+  }
+
+  .outlined-basic {
+    width: 220px;
+    
+  }
+
+  .cont-log {
+    display: flex;
+    justify-content: center;
+    margin-left: -8px;
+    gap: 2PX;
+  }
+
+  .titre-connexion {
+    width: 204px;
+    height: 70px;
+    border-radius: 20px 20px 20px;
+    background-color: #644ACC;
+    margin-top: -60px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: solid 1px white;
+    padding: 10px;
+  }
+
+  .btn-Conex {
+    width: 220px;
+    height: 52px;
+    background-color: #644ACC;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .Email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20Px;
+    margin-left: 20px;
+  }
+
+  .tout1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .bordu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 65px;
+    width: 344px;
+    background-color: #644ACC;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 0px 0px;
+    position: fixed;
+  
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 90px;
+    margin-left: 169px;
+    margin-top: -12px;
+  }
+
+  .ligne{
+    width: 40px;
+    margin-top: -30px;
+    margin-left: 200px;
+  }
+  .tk{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contbarv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .seach {
+    margin-top: 100px;
+    background-color: #D6D1D1;
+    border: 2px#010000;
+    margin-left: 0px;
+    display: flex;
+    width: 269px;
+    height: 34px;
+  }
+
+  .contToutrecta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -0px;
+    margin-left: 0px;
+  }
+
+  .cont-recta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 297px;
+    height: 132px;
+    background-color: white;
+    margin-left: 47px;
+    margin-top: 60px;
+    border-radius: 15px 15px 15px;
+  }
 
 
+  .cont-recta1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 297px;
+    height: 132px;
+    background-color: white;
+    margin-left: 48px;
+    margin-top: 60px;
+    border-radius: 15px 15px 15px;
+  }
 
+  .cont-recta2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 297px;
+    height: 132px;
+    background-color: white;
+    margin-left: 48px;
+    margin-top: 60px;
+    border-radius: 15px 15px 15px;
+  }
 
+  .titreFar {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 256px;
+    font-weight: bold;
+    font-size: 24px;
+  }
 
+  .ligneFar {
+    background-color: #644ACC;
+    margin-top: -15px;
+    margin-left: 60px;
+    width: 69px;
+    height: 5px;
+  }
 
-
-
-
-
-
-
+}

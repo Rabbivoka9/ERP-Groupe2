@@ -1,8 +1,9 @@
+import Login from "../Composants/Log"
 
-function Login(){
+
+function Login1(){
     return(
-        <div>
-           Login
-        </div>
+        <Login/>
+        
     )
-}export default Login
+}export default Login1
