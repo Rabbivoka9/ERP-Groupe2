@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { TextField, Button, IconButton, InputAdornment, MenuItem } from '@mui/material';
-import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { TextField } from '@mui/material';
 function Inscription(){
 
     const {
@@ -70,7 +69,7 @@ function Inscription(){
 
             <div>
 
-                <p>Vous avais un compte?  <NavLink to="/Login" className="ab papi">Se connecter</NavLink></p>
+                <p>Vous avais un compte?  <NavLink to="/" className="ab papi">Se connecter</NavLink></p>
                 
                 
             </div>

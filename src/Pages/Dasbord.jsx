@@ -15,18 +15,21 @@ function Dashbord(){
                 <Header/>
                 <Bar/>
             </div>
-            <div className="contToutrecta">
-                <Recta1/>
-                <Recta2/>
-                <Recta3/>
-                <h3 className="titreFar">Démande des Cotations recentes </h3>
-                <div className="ligneFar"></div>
+            <div className="gb">
+                <div className="contToutrecta">
+                    <Recta1/>
+                    <Recta2/>
+                    <Recta3/>
+                    <h3 className="titreFar">Démande des Cotations recentes </h3>
+                    <div className="ligneFar"></div>
+                </div>
+                <div className="FormCo">
+                    <FormCota1/>
+                    <FormCota2/>
+                    <FormCota3/>
+                </div>
             </div>
-            <div className="FormCo">
-                <FormCota1/>
-                <FormCota2/>
-                <FormCota3/>
-            </div>
+            
             
 
 

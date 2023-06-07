@@ -10,7 +10,11 @@ function Portefeuil(){
             <Header/>
             <Bar/>
         </div>
-        <TabClient/>
+
+        <div className="gclient">
+          <TabClient/>  
+        </div>
+        
         
 
         

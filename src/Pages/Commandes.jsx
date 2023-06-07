@@ -11,7 +11,10 @@ function Commandes(){
             <Header/>
             <Bar/>
         </div>
-        <Tcomande/>
+        <div className="gcoman">
+             <Tcomande/>
+        </div>
+       
 
         
 

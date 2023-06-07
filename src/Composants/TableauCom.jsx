@@ -1,69 +1,106 @@
 import { Table } from "react-materialize"
+import { Icon } from "@iconify/react";
+import BasicMenu from "./Btn";
 
 
 function Tcomande (){
     return (
 
 
-        <div className="Cont-tableau">
+        <div className="Cont-tableau8">
 
-                <div className="cont-plan">
+                <div className="cont-plan8">
                     <div className="cont-p"><h4 className="Plan-name">Commandes</h4></div>
                     
                 </div>
                 <div>
-                     <Table className="tab-titre">
-                            <thead >
-                                <tr>
-                                <th data-field="id">
-                                    Clients
-                                </th>
-                                <th data-field="name">
-                                    Designation
-                                </th>
-                                <th data-field="price">
-                                    Date
-                                </th>
-                                <th data-field="price">
-                                    Etat
-                                </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                
-                                </td>
-                                </tr>
-                                <tr>
-                                <td>
-                                
-                                </td>
-                                <td>
-                                
-                                </td>
-                                <td>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                
-                                </td>
-                                </tr>
-                                
-                                
-                            </tbody>
-                </Table>
+                <table className="ta-titre1 ">
+          <tbody>
+           
+               <tr className="colums,tira" >
+                  <th>Clients</th>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Etat</th>
+                </tr> 
+           
+                     
+             <tr className="trd">
+
+              <td>Farine 25kg</td>
+              <td> 700</td>
+              <td>Disponible</td>
+              <td className="gender">
+                10 juin 2023
+              </td>
+              
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+             
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+              
+              </td>
+            </tr>            <tr>
+              <td>
+                
+              </td>
+              <td></td>
+              <td></td>
+              <td className="gender"></td>
+              <td>
+             
+              </td>
+            </tr>            <tr>
+              
+              
+            </tr>
+          </tbody>
+        </table>
             </div>
-            {/* <button className="btn-plus"><img className="icon-plus" src="plus.png" alt="" /></button> */}
+            
         </div>
        
 

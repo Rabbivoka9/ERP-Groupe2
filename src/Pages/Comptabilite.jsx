@@ -11,7 +11,10 @@ function Comptabilite(){
             <Header/>
             <Bar/>
         </div>
-        <TabCompt/>
+        <div className="gcompte" >
+            <TabCompt/>
+        </div>
+        
         
 
         
