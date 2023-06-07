@@ -7,13 +7,16 @@ import Portefeuil from "./Pages/Portefeuil";
 import Comptabilite from "./Pages/Comptabilite";
 import Commandes from "./Pages/Commandes";
 import Configuration from "./Pages/Conf";
+import Inscription from "./Composants/Inscriptuion";
 import './App.css';
 
 function App () {
   return(
     <BrowserRouter>
      <Routes>
-       <Route path="/" element={<Dashbord/>}></Route>
+      <Route path="/Inscription" element={<Inscription/>}></Route> 
+       <Route path="/" element={<Login/>}></Route> 
+       <Route path="/dasbord" element={<Dashbord/>}></Route>
        <Route path="/Stock" element={<Stocks/>}></Route>
        <Route path="/Production" element={<Productions/>}></Route>
        <Route path="/Comptabilite" element={<Comptabilite/>}></Route>

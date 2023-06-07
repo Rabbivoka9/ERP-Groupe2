@@ -1,5 +1,6 @@
 import Header from "../Composants/Navbar"
 import Bar from "../Composants/BarRech"
+import TabClient from "../Composants/Tclients"
 
 function Portefeuil(){
     return(
@@ -9,6 +10,11 @@ function Portefeuil(){
             <Header/>
             <Bar/>
         </div>
+
+        <div className="gclient">
+          <TabClient/>  
+        </div>
+        
         
 
         

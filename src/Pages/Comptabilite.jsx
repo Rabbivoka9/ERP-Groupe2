@@ -1,5 +1,6 @@
 import Header from "../Composants/Navbar"
 import Bar from "../Composants/BarRech"
+import TabCompt from "../Composants/Tcompt"
 
 
 function Comptabilite(){
@@ -10,6 +11,10 @@ function Comptabilite(){
             <Header/>
             <Bar/>
         </div>
+        <div className="gcompte" >
+            <TabCompt/>
+        </div>
+        
         
 
         

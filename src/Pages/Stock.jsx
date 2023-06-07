@@ -1,6 +1,7 @@
 
 import Header from "../Composants/Navbar"
 import Bar from "../Composants/BarRech"
+import Tstock from "../Composants/Tstock"
 
 function Stocks(){
     return(
@@ -10,6 +11,8 @@ function Stocks(){
             <Header/>
             <Bar/>
         </div>
+
+        <Tstock/>
         
 
         
