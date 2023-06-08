@@ -82,7 +82,6 @@ function Login (){
                 </div>
                 <div className='cont-bvlog'> 
                     <img className="log-icon" src="erp.png" alt="" />
-                    <div className="cont-bienv">Bienvenue</div>
                 </div>
 
                 
