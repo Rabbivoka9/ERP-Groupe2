@@ -41,17 +41,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .cont-log {
   display: flex;
   justify-content: center;
@@ -79,8 +68,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 463px;
-  height: 508px;
+  width: 490px;
+  height: 600px;
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-top: 160px;
@@ -92,14 +81,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-style: none;
   margin-top: 40px;
-  margin-left: 20px;
   gap: 20Px;
 }
-
-
-
-
 
 
 .Email {
@@ -110,24 +95,32 @@ body {
   gap: 20Px;
 }
 
-
 .btn-Conex {
   width: 390px;
   height: 52px;
   background-color: #644ACC;
   border-style: none;
+  border-radius: 5px;
   color: white;
   font-size: 15px;
   font-weight: bold;
 }
 
-.outlined-basic {
+ .input {
   width: 390px;
-  
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: rgb(236, 235, 235);
+}
+
+input{
+  width: 390px;
+  height: 50px;
 }
 
 .textarea.materialize-textarea {
-  border-bottom: 0px;
+  border-bottom: no;
 }
 
 
@@ -850,10 +843,14 @@ td{
     width: auto;
   }
 
-  .outlined-basic {
-    width: 220px;
-    
-  }
+  
+  .input {
+   width: 220px;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   border: none;
+   background-color: rgb(236, 235, 235);
+ }
 
   .cont-log {
     display: flex;
