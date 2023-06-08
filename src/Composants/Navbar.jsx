@@ -6,7 +6,7 @@ import '../App.css';
 
 
 function Header() {
-    return (<div  >
+    return (<div>
 
         <Navbar className="nav"
 
@@ -53,18 +53,54 @@ function Header() {
                 
                 <div className="btn32">
                     <img className="icon23" src="coma.png" alt="" />
-                    <NavLink to="/Commandes" className="ab papi">Commandes</NavLink>
+                    <NavLink to="/Commandes" className="ab papi">Commandes Cli</NavLink>
                 </div>
                 
                 <div className="btn33">
                     <img className="icon23" src="portf.png" alt="" />
                      <NavLink to="/Portefeuil" className="ab papi">Portefeuil Clients</NavLink>
                 </div>
+
+                <div className="btn37">
+                    <img className="icon23" src="edi.png" alt="" />
+                     <NavLink to="/Dcotation" className="ab papi">Cotation</NavLink>
+                </div>
+
+                <div className="btn37">
+                    <img className="icon23" src="gestion.png" alt="" />
+                     <NavLink to="/Goffres" className="ab papi"> Gestion d'Offres</NavLink>
+                </div>
+                <div className="btn37">
+                    <img className="icon23" src="fou.png" alt="" />
+                     <NavLink to="/fournisseurs" className="ab papi"> Mes Fournisseurs</NavLink>
+                </div>
+                <div className="btn37">
+                    <img className="icon23" src="commande.png" alt="" />
+                     <NavLink to="/CommandeEm" className="ab papi"> Commandes</NavLink>
+                </div>
+
+                <div className="btn37">
+                    <img className="icon23" src="Entr.png" alt="" />
+                     <NavLink to="/Entreprise" className="ab papi"> Entreprises</NavLink>
+                </div>
+
+                <div className="btn37">
+                    <img className="icon23" src="Vend.png" alt="" />
+                     <NavLink to="/Articles" className="ab papi"> Articles</NavLink>
+                </div>
+
+                <div className="btn37">
+                    <img className="icon23" src="CliV.png" alt="" />
+                     <NavLink to="/Vendeur" className="ab papi"> Vendeurs</NavLink>
+                </div>
+
+                
                
                  <div className="btn34">
                     <img className="icon23" src="para.png" alt="" />
                     <NavLink to="/Conf" className="ab papi">Paramétres</NavLink>
                 </div> 
+                
                 
             </div>
 
