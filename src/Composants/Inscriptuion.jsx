@@ -7,7 +7,7 @@ function Inscription(){
 
     const {
         register,
-        handleSubmit,
+       
         formState: { errors },
         reset,
         clearErrors
