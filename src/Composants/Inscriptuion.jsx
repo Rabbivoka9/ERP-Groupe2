@@ -26,47 +26,65 @@ function Inscription(){
             <div className="cont-log">
                 <div className="menu-login1">
                     <div className="titre-connexion">
-                        <h5>Inscription</h5>
+                      <h5>Inscription</h5>
                     </div>
                     <div className='Email1' >
 
-                    <TextField className='outlined-basic'
+                      <div className='outlined-basic'>
+                          <TextField 
+                            {...register('fullName', { required: true })}
                             label="Nom"
-                            variant="outlined"
+                            variant="outlined"                           
                             error={errors.email ? true : false}
-                            helperText={errors.email ? 'L\'email est requis' : ''}
-                              inputProps={{
-                               style: { borderBottom: '0px solid #000' } }}
+                            helperText={errors.email ? 'Le nom est requis' : ''}
+                            className='input'
+                            inputProps={{
+                            style: { borderBottom: '0px  #000' } }}
+                          />
+                       </div>
 
-                        />
-
-                    <TextField className='outlined-basic'
+                        <div className='outlined-basic'>
+                          <TextField 
+                            {...register('Description', { required: true })}
                             label="Description"
                             variant="outlined"
                             error={errors.email ? true : false}
-                            helperText={errors.email ? 'L\'email est requis' : ''}
-                              inputProps={{
-                               style: { borderBottom: '0px solid #000' } }}
+                            helperText={errors.email ? 'La Description est requise' : ''}
+                            className='input'
+                            inputProps={{
+                            style: { borderBottom: '0px  #000' } }}
 
-                        />
+                          />
+                        </div>
 
-                        <TextField className='outlined-basic'
+               
+                        <div className='outlined-basic'>
+                          <TextField 
                             {...register('email', { required: true })}
                             label="Email"
                             variant="outlined"
                             error={errors.email ? true : false}
                             helperText={errors.email ? 'L\'email est requis' : ''}
-                              inputProps={{
-                               style: { borderBottom: '0px solid #000' } }}
-
-                        />
-
+                            className='input'
+                            inputProps={{
+                            style: { borderBottom: '0px #000' } }}
+                          />
+                        </div>
                         
+                         {/* Champ de formulaire pour la photo de profil */}
+                         <div className="profile-photo-box">
+                           {/* <label htmlFor="profilePhoto">profil</label> */}
+                           <input
+                             {...register('profilePhoto')}
+                             type="file"
+                             accept="image/*"
+                             id="profilePhoto"
+                             className='input'
+                           />
+                         </div>
 
-
+                      
             <button className='btn-Conex'><NavLink to="/Login" className="ab papi">S'Inscrire</NavLink></button>
-
-
             <div>
 
                 <p>Vous avais un compte?  <NavLink to="/" className="ab papi">Se connecter</NavLink></p>
@@ -74,9 +92,7 @@ function Inscription(){
                 
             </div>
                   
-                   
-
-                    </div>
+                </div>
 
 
                 </div>
