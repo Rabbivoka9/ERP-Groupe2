@@ -10,6 +10,7 @@ body {
 
 .tout1 {
   display: flex;
+  margin-top: -40px;
   justify-content: center;
   height: auto;
 }
@@ -143,6 +144,12 @@ body {
   padding-left: 40px;
   margin-top: -250px;
   margin-left: 380px;
+}
+
+
+.zb{
+
+  margin-top: 300px;
 }
 
 
@@ -320,10 +327,10 @@ body {
 .nav {
   display: flex;
   flex-direction: column;
-  height: 756px;
+  height: auto;
   width: 271px;
   background-color: #644ACC;
-  margin-top: 90px;
+  margin-top: 50px;
   margin-left: 220px;
   border-radius: 20px 20px;
 
@@ -355,6 +362,10 @@ body {
   display: flex;
 }
 
+.btn37 {
+  display: flex;
+}
+
 .ligne {
   background-color: white;
   height: 2px;
@@ -368,7 +379,7 @@ body {
 
 .btn34 {
   display: flex;
-  margin-top: 170px;
+  margin-top: 70px;
 }
 
 
@@ -687,6 +698,8 @@ body {
   margin-top: 40px;
 }
 
+
+
 .ta-titre{
   color: #644ACC;
   width: 1000px;
@@ -914,7 +927,7 @@ td{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    height: 65px;
+    height: auto;
     width: 344px;
     background-color: #644ACC;
     margin-top: 20px;
@@ -947,7 +960,7 @@ td{
   }
 
   .seach {
-    margin-top: 100px;
+    margin-top: 110px;
     background-color: #D6D1D1;
     border: 2px#010000;
     margin-left: 0px;
@@ -1202,6 +1215,37 @@ td{
     border-radius: 20px 20px 0px 0px;
     background-color: #644ACC;
     color: white;
+  }
+
+
+  .sidenav{
+
+    background-color: #545455;
+    width: 200px;
+    color: white;
+
+  }
+
+
+  .papi {
+    margin-top: -17px;
+  }
+
+
+  .btn23 {
+    margin-top: 220px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 291px;
+    background-color: #644ACC;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 0px 0px;
+  
   }
 
  
