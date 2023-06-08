@@ -70,10 +70,8 @@ function Inscription(){
                             style: { borderBottom: '0px #000' } }}
                           />
                         </div>
-                        
-                         {/* Champ de formulaire pour la photo de profil */}
-                         <div className="profile-photo-box">
-                           {/* <label htmlFor="profilePhoto">profil</label> */}
+                      
+                         <div className="outlined-basic">
                            <input
                              {...register('profilePhoto')}
                              type="file"
