@@ -29,7 +29,7 @@ function Login() {
         const { role } = response.data;
         if (role === "Vendeur") {
             window.location.href = "/Dasbord"
-          
+    
         } else {
         }
         console.log(response.data.role);
