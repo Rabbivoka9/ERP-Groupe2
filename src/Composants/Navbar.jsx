@@ -30,15 +30,23 @@ function Header() {
                 preventScrolling: true
             }}
         >
+
+
+
             <div className="btn23">
                 <div className="btn31">
-                    <img className="icon23" src="tb.png" alt="" />
-                      <NavLink to="/Dasbord" className="ab papi">Tableau de Bord</NavLink>
+                    <div>
+                        <img className="icon23" src="tb.png" alt="" />
+                    </div>
+                     
+                     <div className="vw"><NavLink to="/Dasbord" className="ab papi">Tableau de Bord</NavLink></div>
+                      
                 </div>
               
                 <div className="btn31">
+            
                     <img className="icon23" src="gest.png" alt="" />
-                    <NavLink to="/Stock" className="ab papi">Stocks</NavLink>
+                    <NavLink to="/Stock" className="papi">Stocks</NavLink>
                 </div>
                 
                 <div className="btn31">

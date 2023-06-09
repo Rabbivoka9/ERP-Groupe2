@@ -21,6 +21,9 @@ body {
 
 }
 
+ 
+
+
 .Fond-login {
   background-image: url("/public/Connexion.png");
   background-size: cover;
@@ -918,6 +921,7 @@ td{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 40px;
   
   }
 
@@ -928,7 +932,7 @@ td{
     height: auto;
     width: 344px;
     background-color: #644ACC;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 20px;
     border-radius: 0px 0px;
     position: fixed;
@@ -961,7 +965,8 @@ td{
     margin-top: 110px;
     background-color: #D6D1D1;
     border: 2px#010000;
-    margin-left: 0px;
+    margin-left: -40px;
+    margin-top: 160pX;
     display: flex;
     width: 269px;
     height: 34px;
@@ -1108,7 +1113,8 @@ td{
   }
 
   .gb{
-    margin-left: -8px;
+    margin-left: 35px;
+    margin-top: 35px;
   }
 
   .btn-plus1 {
@@ -1234,17 +1240,7 @@ td{
     margin-top: 220px;
   }
 
-  .nav {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 291px;
-    background-color: #644ACC;
-    margin-top: 50px;
-    margin-left: 50px;
-    border-radius: 0px 0px;
   
-  }
 
  
 
