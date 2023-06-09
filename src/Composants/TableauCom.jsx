@@ -1,6 +1,4 @@
-import { Table } from "react-materialize"
-import { Icon } from "@iconify/react";
-import BasicMenu from "./Btn";
+
 
 
 function Tcomande (){
