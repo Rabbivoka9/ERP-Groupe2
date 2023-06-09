@@ -17,14 +17,20 @@ function Inscription() {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/inscription", data)
-      .then((response) => {
-        setApiResponse(response.data.message);
-        setModalOpen(true);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  .post("http://localhost:5000/inscription", data)
+  .then((response) => {
+    setApiResponse(response.data.message);
+    setModalOpen(true);
+  })
+  .catch((error) => {
+    if (error.response && error.response.data && error.response.data.error) {
+      setApiResponse(error.response.data.error);
+      setModalOpen(true);
+    } else {
+      console.error(error);
+    }
+  });
+
   };
 
   return (
@@ -102,6 +108,7 @@ function Inscription() {
         <h4>{JSON.stringify(apiResponse)}</h4>
         <button onClick={() => setModalOpen(false)}>Fermer</button>
       </ReactModal>
+      
     </div>
   );
 }
