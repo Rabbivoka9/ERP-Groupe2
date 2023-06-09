@@ -372,6 +372,19 @@ input{
 
 }
 
+
+.nav_Admin {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 271px;
+  background-color: #644ACC;
+  margin-top: 70px;
+  margin-left: 220px;
+  border-radius: 20px 20px;
+
+}
+
 .gb{
   margin-left: 120px;
 }
