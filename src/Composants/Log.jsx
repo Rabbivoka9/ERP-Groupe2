@@ -33,27 +33,27 @@ function Login (){
                             inputProps={{
                              style: { borderBottom: '0px solid #000' } }}
                         /> 
-                        <TextField
-                            className='outlined-basic'
+
+                        <TextField className='outlined-basic'
                             {...register('password', { required: true })}
                             label="Mot de passe"
                             type={showPassword ? 'text' : 'password'}
                             variant="outlined"
                             error={errors.password ? true : false}
                             helperText={errors.password ? 'Le mot de passe est requis' : ''}
-                            InputProps={{
-                            style: { borderBottom: '0px solid #ffff' },
-                            endAdornment: (
-                            <InputAdornment  position="end">
-                              <IconButton onClick={handleClickShowPassword}>
-                               {showPassword ? <VisibilityOff /> : <Visibility />}
-                              </IconButton>
-                            </InputAdornment>
-                            )
-                        }}
-                        />
+                            inputProps={{
+                             style: { borderBottom: '0px solid #000',textAlign: 'center'},
+                             endAdornment: (
+                                <InputAdornment position="end">
+                                    <IconButton onClick={handleClickShowPassword}>
+                                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                                    </IconButton>
+                                </InputAdornment>
+                            ) }}
+                        /> 
+                            
 
-            <button className='btn-Conex'>Connexion <NavLink to="/Modal" className="ab papi">MODAL</NavLink></button>
+            <button className='btn-Conex'>Connexion</button>
 
             <div>
                 <p>Vous n'avais pas de compte?<NavLink to="/Inscription" className="ab papi">S'inscrire</NavLink></p>

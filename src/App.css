@@ -51,6 +51,10 @@ body {
 
 }
 
+.textarea.materialize-textarea {
+  border-bottom: 2px black;
+}
+
 .titre-api{
   font-size: 35px;
   font-weight: bold;

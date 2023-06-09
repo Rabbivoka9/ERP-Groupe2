@@ -16,6 +16,7 @@ import Entreprise from "./Pages/Entreprise";
 import Vendeur from "./Pages/Vendeur";
 import Articles from "./Pages/Articles";
 import Modal from "./Composants/Modal";
+import Dashbord_admin from "./Composants/Dashbord_Admin";
 import './App.css';
 
 function App () {
@@ -38,6 +39,7 @@ function App () {
        <Route path="/Vendeur" element={<Vendeur/>}></Route>
        <Route path="/Articles" element={<Articles/>}></Route>
        <Route path="/Modal" element={<Modal/>}></Route>
+       <Route path="/Dashbord_Admin" element={<Dashbord_admin/>}></Route>
       
 
 
