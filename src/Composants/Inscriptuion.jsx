@@ -19,7 +19,7 @@ function Inscription() {
     axios
       .post("http://localhost:5000/inscription", data)
       .then((response) => {
-        setApiResponse(response.data);
+        setApiResponse(response.data.message);
         setModalOpen(true);
       })
       .catch((error) => {
@@ -99,8 +99,7 @@ function Inscription() {
         isOpen={isModalOpen}
         onRequestClose={() => setModalOpen(false)}
       >
-        <h2>Réponse de l'API</h2>
-        <p>{JSON.stringify(apiResponse)}</p>
+        <h4>{JSON.stringify(apiResponse)}</h4>
         <button onClick={() => setModalOpen(false)}>Fermer</button>
       </ReactModal>
     </div>
