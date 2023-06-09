@@ -15,6 +15,7 @@ import CommandeEm from "./Pages/CommandeEm";
 import Entreprise from "./Pages/Entreprise";
 import Vendeur from "./Pages/Vendeur";
 import Articles from "./Pages/Articles";
+import Modal from "./Composants/Modal";
 import './App.css';
 
 function App () {
@@ -36,6 +37,8 @@ function App () {
        <Route path="/Entreprise" element={<Entreprise/>}></Route>
        <Route path="/Vendeur" element={<Vendeur/>}></Route>
        <Route path="/Articles" element={<Articles/>}></Route>
+       <Route path="/Modal" element={<Modal/>}></Route>
+      
 
 
        <Route path="/Conf" element={<Configuration/>}></Route>

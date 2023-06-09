@@ -17,7 +17,7 @@ function Inscription() {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/inscription", data)
+      .post("http://192.168.0.129:5000/inscription", data)
       .then((response) => {
         setApiResponse(response.data);
         setModalOpen(true);
