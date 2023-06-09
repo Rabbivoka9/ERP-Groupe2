@@ -7,15 +7,10 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 function Login (){
     const {
         register,
-        handleSubmit,
+      
         formState: { errors },
-        reset,
-        clearErrors
-        } = useForm();  const onSubmit = (data) => {
-        console.log(data);    // Réinitialiser le formulaire
-        reset();
-        clearErrors();
-      }  
+       
+        } = useForm();  
         const [showPassword, setShowPassword] = useState()  
         const handleClickShowPassword = () => {
         setShowPassword(!showPassword);

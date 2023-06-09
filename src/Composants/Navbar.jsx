@@ -11,7 +11,7 @@ function Header() {
         <Navbar className="nav"
 
             alignLinks="right"
-            brand={<a className="brand-logo" href="#"><div className="tk">
+            brand={<a className="brand-logo" href="/"><div className="tk">
                 <img className="logo" src="erp.png" alt="" /> 
             <div className="ligne"></div></div></a>}
          
