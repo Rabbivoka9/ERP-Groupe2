@@ -1,4 +1,4 @@
-import Header_Vendeur from "./Navbar_Vendeur"
+import Header_entreprise from "./Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
 import RectAmin from "./RectAdmin"
 import RectAdmin2 from "./RectAmin2"
@@ -8,12 +8,12 @@ import FormCota2 from "../Composants/FormCotation1"
 import FormCota3 from "../Composants/FormCotation3"
 
 
-function Dashbord_Vendeur(){
+function Dashbord_Entreprise(){
     return(
         <div className="tout1">
             
             <div className="bordu">
-                <Header_Vendeur/>
+                <Header_entreprise/>
                 <Bar/>
             </div>
             <div className="gb">
@@ -37,4 +37,4 @@ function Dashbord_Vendeur(){
             
         </div>
     )
-}export default Dashbord_Vendeur
+}export default Dashbord_Entreprise

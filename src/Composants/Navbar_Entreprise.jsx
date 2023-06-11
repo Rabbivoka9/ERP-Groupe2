@@ -3,7 +3,7 @@ import { Navbar, Icon } from "react-materialize";
 import { NavLink } from "react-router-dom";
 import '../App.css';
 
-function Header_Vendeur() {
+function Header_entreprise() {
   return (
     <div>
       <Navbar
@@ -38,7 +38,7 @@ function Header_Vendeur() {
               <img className="icon23" src="tb.png" alt="" />
             </div>
             <div className="vw">
-              <NavLink to="/Dashbord_Vendeur" className=" papi">
+              <NavLink to="/Dashbord_Entreprise" className=" papi">
                 Tableau de Bord
               </NavLink>
             </div>
@@ -83,4 +83,4 @@ function Header_Vendeur() {
   );
 }
 
-export default Header_Vendeur;
+export default Header_entreprise;
