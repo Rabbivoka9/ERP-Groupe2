@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -8,7 +8,6 @@ import axios from "axios";
 import { createBrowserHistory } from "history";
 
 function Login() {
-  const history = createBrowserHistory();
 
   const {
     register,
@@ -17,7 +16,7 @@ function Login() {
   } = useForm();
 
   const [showPassword, setShowPassword] = useState(false);
-
+  const [errorMessage, setErrorMessage] = useState("");
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
   };
@@ -36,7 +35,15 @@ function Login() {
       })
       .catch((error) => {
         // Gestion des erreurs
-        console.error(error);
+        if (
+          error.response &&
+          error.response.data &&
+          error.response.data.error
+        ) {
+          setErrorMessage(error.response.data.error);
+        } else {
+          console.error(error);
+        }
       });
   };
 
@@ -48,6 +55,7 @@ function Login() {
             <h5>Se Connecter</h5>
           </div>
           <div className="Email">
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <TextField
               className="outlined-basic"
               {...register("username", { required: true })}

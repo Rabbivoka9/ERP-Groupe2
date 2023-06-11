@@ -20,6 +20,7 @@ import CommandeEm from './Pages/CommandeEm';
 import Entreprise from './Pages/Entreprise';
 import Vendeur from './Pages/Vendeur';
 import Articles from './Pages/Articles';
+import Dashbord_admin from './Composants/Dashbord_Admin';
 
 // Définir l'élément racine de votre application
 Modal.setAppElement('#root');
@@ -27,24 +28,32 @@ Modal.setAppElement('#root');
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/Inscription" element={<Inscription />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/dasbord" element={<Dashbord />} />
-        <Route path="/Stock" element={<Stocks />} />
-        <Route path="/Production" element={<Productions />} />
-        <Route path="/Comptabilite" element={<Comptabilite />} />
-        <Route path="/Commandes" element={<Commandes />} />
-        <Route path="/CommandeEm" element={<CommandeEm />} />
-        <Route path="/Dcotation" element={<Dcotation />} />
-        <Route path="/Fournisseurs" element={<Fournisseurs />} />
-        <Route path="/Goffres" element={<Goffres />} />
-        <Route path="/Portefeuil" element={<Portefeuil />} />
-        <Route path="/Entreprise" element={<Entreprise />} />
-        <Route path="/Vendeur" element={<Vendeur />} />
-        <Route path="/Articles" element={<Articles />} />
-        <Route path="/Conf" element={<Configuration />} />
-      </Routes>
+     
+     <Routes>
+      <Route path="/Inscription" element={<Inscription/>}></Route> 
+       <Route path="/" element={<Login/>}></Route> 
+       <Route path="/dasbord" element={<Dashbord/>}></Route>
+       <Route path="/Stock" element={<Stocks/>}></Route>
+       <Route path="/Production" element={<Productions/>}></Route>
+       <Route path="/Comptabilite" element={<Comptabilite/>}></Route>
+       <Route path="/Commandes" element={<Commandes/>}></Route>
+       <Route path="/CommandeEm" element={<CommandeEm/>}></Route>
+       <Route path="/Dcotation" element={<Dcotation/>}></Route>
+       <Route path="/Fournisseurs" element={<Fournisseurs/>}></Route>
+       <Route path="/Goffres" element={<Goffres/>}></Route>
+       <Route path="/Portefeuil" element={<Portefeuil/>}></Route>
+       <Route path="/Entreprise" element={<Entreprise/>}></Route>
+       <Route path="/Vendeur" element={<Vendeur/>}></Route>
+       <Route path="/Articles" element={<Articles/>}></Route>
+       <Route path="/Modal" element={<Modal/>}></Route>
+       <Route path="/Dashbord_Admin" element={<Dashbord_admin/>}></Route>
+      
+
+
+       <Route path="/Conf" element={<Configuration/>}></Route>
+
+      
+     </Routes>
     </BrowserRouter>
   );
 }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { TextField } from "@mui/material";
 import axios from "axios";
 import ReactModal from "react-modal";
+import { TextField } from "@mui/material";
 
 function Inscription() {
   const {
@@ -17,20 +17,34 @@ function Inscription() {
 
   const onSubmit = (data) => {
     axios
-  .post("http://localhost:5000/inscription", data)
-  .then((response) => {
-    setApiResponse(response.data.message);
-    setModalOpen(true);
-  })
-  .catch((error) => {
-    if (error.response && error.response.data && error.response.data.error) {
-      setApiResponse(error.response.data.error);
-      setModalOpen(true);
-    } else {
-      console.error(error);
-    }
-  });
+      .post("http://localhost:5000/inscription", data)
+      .then((response) => {
+        setApiResponse(response.data.message);
+        setModalOpen(true);
+      })
+      .catch((error) => {
+        if (
+          error.response &&
+          error.response.data &&
+          error.response.data.error
+        ) {
+          setApiResponse(error.response.data.error);
+          setModalOpen(true);
+        } else {
+          console.error(error);
+        }
+      });
+  };
 
+  const closeModal = () => {
+    setModalOpen(false);
+
+    if (
+      apiResponse ===
+      "Compte crée avec succès, veuillez consulter votre boite mail"
+    ) {
+      window.location.href = "/";
+    }
   };
 
   return (
@@ -73,15 +87,23 @@ function Inscription() {
 
             <div className="outlined-basic">
               <TextField
-                {...register("email", { required: true })}
+                {...register("email", {
+                  required: true,
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "L'adresse e-mail n'est pas valide",
+                  },
+                })}
                 label="Email"
                 name="email"
                 variant="outlined"
                 error={errors.email ? true : false}
-                helperText={errors.email ? "L'email est requis" : ""}
+                helperText={
+                  errors.email ? errors.email.message : ""
+                }
                 className="input"
                 inputProps={{
-                  style: { borderBottom: "0px #000" },
+                  style: { borderBottom: "0px  #000" },
                 }}
               />
             </div>
@@ -100,15 +122,16 @@ function Inscription() {
           </div>
         </div>
       </div>
-
       <ReactModal
+        className="Mod"
         isOpen={isModalOpen}
-        onRequestClose={() => setModalOpen(false)}
+        onRequestClose={closeModal}
       >
-        <h4>{JSON.stringify(apiResponse)}</h4>
-        <button onClick={() => setModalOpen(false)}>Fermer</button>
+        <h2 className="titre-api">{JSON.stringify(apiResponse)}</h2>
+        <button className="btn-ferme" onClick={closeModal}>
+          Fermer
+        </button>
       </ReactModal>
-      
     </div>
   );
 }
