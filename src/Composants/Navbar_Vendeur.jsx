@@ -3,11 +3,11 @@ import { Navbar, Icon } from "react-materialize";
 import { NavLink } from "react-router-dom";
 import '../App.css';
 
-function Header() {
+function Header_Vendeur() {
   return (
     <div>
       <Navbar
-        className="nav_Vendeur"
+        className="nav_Vendeur "
         alignLinks="right"
         brand={
           <a className="brand-logo" href="/">
@@ -38,42 +38,39 @@ function Header() {
               <img className="icon23" src="tb.png" alt="" />
             </div>
             <div className="vw">
-              <NavLink to="/Dasbord" className=" papi">
+              <NavLink to="/Dashbord_Vendeur" className=" papi">
                 Tableau de Bord
               </NavLink>
             </div>
           </div>
-          <div className="btn31">
-            <img className="icon23" src="gest.png" alt="" />
-            <NavLink to="/Stock" className="papi">
-              Stocks
+         
+         
+         
+          <div className="btn37">
+            <img className="icon23" src="edi.png" alt="" />
+            <NavLink to="/Dcotation" className=" papi">
+              Cotation
             </NavLink>
           </div>
-          <div className="btn31">
-            <img className="icon23" src="prod.png" alt="" />
-            <NavLink to="/Production" className=" papi">
-              Productions
+          <div className="btn37">
+            <img className="icon23" src="gestion.png" alt="" />
+            <NavLink to="/Goffres" className=" papi">
+              Gestion d'Offres
             </NavLink>
           </div>
-          <div className="btn31">
-            <img className="icon23" src="compt.png" alt="" />
-            <NavLink to="/Comptabilite" className=" papi">
-              Comptabilite
+          <div className="btn37">
+            <img className="icon23" src="fou.png" alt="" />
+            <NavLink to="/fournisseurs" className=" papi">
+              Mes Fournisseurs
             </NavLink>
           </div>
-          <div className="btn32">
-            <img className="icon23" src="coma.png" alt="" />
-            <NavLink to="/Commandes" className=" papi">
-              Commandes Cli
+          <div className="btn37">
+            <img className="icon23" src="commande.png" alt="" />
+            <NavLink to="/CommandeEm" className=" papi">
+              Commandes
             </NavLink>
           </div>
-          <div className="btn33">
-            <img className="icon23" src="portf.png" alt="" />
-            <NavLink to="/Portefeuil" className=" papi">
-              Portefeuil Clients
-            </NavLink>
-          </div>
-          
+         
           <div className="btn34">
             <img className="icon23" src="para.png" alt="" />
             <NavLink to="/Conf" className=" papi">
@@ -86,4 +83,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header_Vendeur;

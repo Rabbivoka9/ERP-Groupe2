@@ -17,6 +17,7 @@ import Vendeur from "./Pages/Vendeur";
 import Articles from "./Pages/Articles";
 import Modal from "./Composants/Modal";
 import Dashbord_admin from "./Composants/Dashbord_Admin";
+import Dashbord_Vendeur from "./Composants/Dashbord_Vendeur";
 import Configuration_Admin from "./Pages/Conf_Admin";
 import './App.css';
 
@@ -41,6 +42,7 @@ function App () {
        <Route path="/Articles" element={<Articles/>}></Route>
        <Route path="/Modal" element={<Modal/>}></Route>
        <Route path="/Dashbord_Admin" element={<Dashbord_admin/>}></Route>
+       <Route path="/Dashbord_Vendeur" element={<Dashbord_Vendeur/>}></Route>
        <Route path="/Conf_Admin" element={<Configuration_Admin/>}></Route>
       
 
