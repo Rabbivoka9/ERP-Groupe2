@@ -1,29 +1,36 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Login from "./Pages/Login";
-import Dashbord from "./Pages/Dasbord";
-import Stocks from "./Pages/Stock";
-import Productions from "./Pages/Production";
-import Portefeuil from "./Pages/Portefeuil";
-import Comptabilite from "./Pages/Comptabilite";
-import Commandes from "./Pages/Commandes";
-import Configuration from "./Pages/Conf";
-import Inscription from "./Composants/Inscriptuion";
-import Fournisseurs from "./Pages/fournisseurs";
-import Goffres from "./Pages/Goffres";
-import Dcotation from "./Pages/Dcotation";
-import CommandeEm from "./Pages/CommandeEm";
-import Entreprise from "./Pages/Entreprise";
-import Vendeur from "./Pages/Vendeur";
-import Articles from "./Pages/Articles";
-import Modal from "./Composants/Modal";
-import Dashbord_admin from "./Composants/Dashbord_Admin";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Modal from 'react-modal';
 import Dashbord_Entreprise from "./Composants/Dashbord_Entreprise";
 import Configuration_Admin from "./Pages/Conf_Admin";
 import './App.css';
 
-function App () {
-  return(
+import Login from './Pages/Login';
+import Dashbord from './Pages/Dasbord';
+import Stocks from './Pages/Stock';
+import Productions from './Pages/Production';
+import Portefeuil from './Pages/Portefeuil';
+import Comptabilite from './Pages/Comptabilite';
+import Commandes from './Pages/Commandes';
+import Configuration from './Pages/Conf';
+import Inscription from './Composants/Inscriptuion';
+import Fournisseurs from './Pages/fournisseurs';
+import Goffres from './Pages/Goffres';
+import Dcotation from './Pages/Dcotation';
+import CommandeEm from './Pages/CommandeEm';
+import Entreprise from './Pages/Entreprise';
+import Vendeur from './Pages/Vendeur';
+import Articles from './Pages/Articles';
+import Dashbord_admin from './Composants/Dashbord_Admin';
+
+// Définir l'élément racine de votre application
+Modal.setAppElement('#root');
+
+function App() {
+  return (
     <BrowserRouter>
+     
      <Routes>
       <Route path="/Inscription" element={<Inscription/>}></Route> 
        <Route path="/" element={<Login/>}></Route> 
@@ -52,6 +59,10 @@ function App () {
       
      </Routes>
     </BrowserRouter>
-  )
-} export default App;
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+export default App;
 
