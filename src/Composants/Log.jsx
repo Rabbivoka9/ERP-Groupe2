@@ -31,7 +31,6 @@ function Login() {
     
         }else if(role ==="Admin"){
           window.location.href = "/Dashbord_Admin"
-
         } 
         else {
         }
