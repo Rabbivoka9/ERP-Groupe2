@@ -29,7 +29,11 @@ function Login() {
         if (role === "Vendeur") {
             window.location.href = "/Dasbord"
     
-        } else {
+        }else if(role ==="Admin"){
+          window.location.href = "/Dashbord_Admin"
+
+        } 
+        else {
         }
         console.log(response.data.role);
       })
