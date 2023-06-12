@@ -29,6 +29,7 @@ body {
   background-size: cover;
   height: 786px;
   width: auto;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .Fond-login1 {
@@ -51,8 +52,15 @@ body {
 
 }
 
+input{
+  text-align: center;
+  font-size: 12px;
+}
+
 .textarea.materialize-textarea {
   border-bottom: 2px black;
+  text-align: center;
+  font-size: 12px;
 }
 
 .titre-api{
@@ -201,6 +209,7 @@ input{
   font-size: 24px;
   border: solid 1px white;
   padding: 30px;
+  box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0);
 }
 
 
@@ -369,6 +378,7 @@ input{
   margin-top: 50px;
   margin-left: 220px;
   border-radius: 20px 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -382,6 +392,7 @@ input{
   margin-top: 70px;
   margin-left: 220px;
   border-radius: 20px 20px;
+  box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
 
