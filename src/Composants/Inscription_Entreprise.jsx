@@ -5,7 +5,7 @@ import axios from "axios";
 import ReactModal from "react-modal";
 import { TextField } from "@mui/material";
 
-function Inscription() {
+function Ajout_EM() {
   const {
     register,
     handleSubmit,
@@ -136,4 +136,4 @@ function Inscription() {
   );
 }
 
-export default Inscription;
+export default Ajout_EM;
