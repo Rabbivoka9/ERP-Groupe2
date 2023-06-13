@@ -1,24 +1,43 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { Edit, Delete, Visibility } from "@mui/icons-material";
 import BasicMenu from "./Btn";
+
 
 function Tentrep() {
   const [entreprises, setEntreprises] = useState([]);
 
-  useEffect(() => {
-    const fetchEntreprises = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/GetEM");
-        console.log(response.data);
-        setEntreprises(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  const fetchEntreprises = async () => {
+    try {
+      const response = await axios.get("http://localhost:5000/GetEM");
+  
+      setEntreprises(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
+  useEffect(() => {
     fetchEntreprises();
   }, []);
+
+  const handleEdit = async (id) => {
+    try {
+      const response = await axios.get(`http://localhost:5000/GetEMId/${id}`);
+      const entreprise = response.data;
+  
+      window.location.href = `/Edit_EntepriseEM/${id}`;
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDelete = (id) => {
+  };
+
+  const handleViewMore = (id) => {
+  };
 
   return (
     <div className="Ent">
@@ -32,9 +51,9 @@ function Tentrep() {
           </div>
         </div>
         <div>
-          <table className="ta-titre ">
+          <table className="ta-titre">
             <tbody>
-              <tr className="colums,tira">
+              <tr className="colums, tira">
                 <th>N°</th>
                 <th>Nom_Entreprise</th>
                 <th>Date Ajout</th>
@@ -49,7 +68,15 @@ function Tentrep() {
                   <td>{entreprise.email}</td>
                   <td>
                     <span>
-                      <BasicMenu />
+                      <button className="btnicon" onClick={() => handleEdit(entreprise.id)}>
+                        <Edit />
+                      </button>
+                      <button className="btnicon" onClick={() => handleDelete(entreprise.id)}>
+                        <Delete />
+                      </button>
+                      <button className="btnicon" onClick={() => handleViewMore(entreprise.id)}>
+                        <Visibility />
+                      </button>
                     </span>
                   </td>
                 </tr>

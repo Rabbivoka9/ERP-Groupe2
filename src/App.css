@@ -180,6 +180,8 @@ input{
 
 
 
+
+
 .log-icon {
   width: 758px;
 }
@@ -207,6 +209,16 @@ input{
   border-radius: 20px 20px 20px;
   margin-top: 160px;
   text-align: center;
+}
+.btnicon{
+  border-style:none ;
+  background-color: white;
+
+}
+.btnicon:focus{
+  border-style:none ;
+  background-color: white;
+  
 }
 .menu-AjoutEM {
   display: flex;
