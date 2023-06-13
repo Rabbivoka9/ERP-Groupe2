@@ -263,6 +263,8 @@ input{
 }
 
 
+
+
 .zb{
 
   margin-top: 300px;
@@ -291,7 +293,7 @@ input{
   border-style: none;
   height: 13px;
   margin-top: 10px;
-  margin-left: -30px;
+  margin-left: 150px;
 
 }
 
@@ -430,6 +432,12 @@ input{
 }
 
 
+.fc{
+  display: flex;
+  margin-left: -180px;
+}
+
+
 
 
 
@@ -448,7 +456,7 @@ input{
   width: 271px;
   background-color: #644ACC;
   margin-top: 60px;
-  margin-left: 220px;
+  margin-left: -40px;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
@@ -462,7 +470,7 @@ input{
   width: 271px;
   background-color: #644ACC;
   margin-top: 70px;
-  margin-left: 220px;
+  margin-left: 60px;
   border-radius: 20px 20px;
   box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.4);
 
@@ -476,13 +484,14 @@ input{
   width: 271px;
   background-color: #644ACC;
   margin-top: 70px;
-  margin-left: 220px;
+  margin-left: -40px;
   border-radius: 20px 20px;
 
 }
 
 .gb{
-  margin-left: 120px;
+  margin-left: 220px;
+  margin-top: 60px;
 }
 
 .papi {

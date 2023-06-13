@@ -73,48 +73,7 @@ function Header() {
               Portefeuil Clients
             </NavLink>
           </div>
-          <div className="btn37">
-            <img className="icon23" src="edi.png" alt="" />
-            <NavLink to="/Dcotation" className=" papi">
-              Cotation
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="gestion.png" alt="" />
-            <NavLink to="/Goffres" className=" papi">
-              Gestion d'Offres
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="fou.png" alt="" />
-            <NavLink to="/fournisseurs" className=" papi">
-              Mes Fournisseurs
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="commande.png" alt="" />
-            <NavLink to="/CommandeEm" className=" papi">
-              Commandes
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="Entr.png" alt="" />
-            <NavLink to="/Entreprise" className=" papi">
-              Entreprises
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="Vend.png" alt="" />
-            <NavLink to="/Articles" className=" papi">
-              Articles
-            </NavLink>
-          </div>
-          <div className="btn37">
-            <img className="icon23" src="CliV.png" alt="" />
-            <NavLink to="/Vendeur" className=" papi">
-              Vendeurs
-            </NavLink>
-          </div>
+         
           <div className="btn34">
             <img className="icon23" src="para.png" alt="" />
             <NavLink to="/Conf" className=" papi">
