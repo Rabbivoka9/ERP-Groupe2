@@ -16,8 +16,11 @@ function Entreprise (){
               </div>
 
               <div>
+               
+                  <Tentrep/>
+                
 
-                <Tentrep/>
+                
 
               </div>
               

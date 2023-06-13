@@ -16,6 +16,25 @@ body {
   font-size: 35px;
   font-weight: bold;
 }
+
+.fd{
+
+  margin-left: -70px;
+}
+
+.tr{
+  color: white;
+  font-weight: bold;
+}
+
+.cont-p5{
+  margin-left: 150px;
+  font-size: 25px;
+}
+
+
+
+
 .btn-ferme{
   width: 200px;
   height: 40px;
@@ -141,7 +160,7 @@ input{
 .contbarv{
   display: flex;
   justify-content: center;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 
@@ -155,7 +174,7 @@ input{
   display: flex;
   justify-content: center;
   gap: 20PX;
-  margin-left: -1500px;
+  margin-left: -1700px;
   margin-top: 70px;
 }
 
@@ -198,7 +217,13 @@ input{
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-top: 230px;
+  margin-left: 300px;
   text-align: center;
+}
+
+
+.formulaire{
+  margin-left: -125px;
 }
 
 
@@ -805,15 +830,16 @@ input{
 
 .btn-plus1 {
   background-color: white;
+  box-shadow: 2px 2px #644ACC ;
   border-style: none;
-  margin-top: 220px;
+  margin-top: 200px;
   width: 124px;
   height: 31px;
   border-radius: 10px 10px 10px;
   font-size: 11px;
   background-color: #644ACC;
   color: white;
-  margin-left: -320px;
+  margin-left: -400px;
 }
 
 
@@ -877,11 +903,11 @@ input{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 899px;
+  width: 1409px;
   height: auto;
  
   border-radius: 20px 20px 20px;
-  margin-left: -680px;
+  margin-left: -1330px;
   margin-top: 40px;
 }
 
@@ -889,8 +915,8 @@ input{
 
 .ta-titre{
   color: #644ACC;
-  width: 1000px;
-  margin-left: -450px;
+  width: 1300px;
+  margin-left: -40px;
   height: auto;
   text-align: center;
   background-color: white;
@@ -953,8 +979,8 @@ td{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -365px;
-  width: 825px;
+  margin-left: 120px;
+  width: 1025px;
   height: auto;
   border-radius: 20px 20px 0px 0px;
   background-color: #644ACC;
@@ -1305,7 +1331,7 @@ td{
 
   .gb{
     margin-left: 35px;
-    margin-top: 35px;
+    margin-top: 80px;
   }
 
   .btn-plus1 {

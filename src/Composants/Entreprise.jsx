@@ -21,9 +21,9 @@ function Tentrep() {
   }, []);
 
   return (
-    <div>
+    <div className="Ent">
       <button className="btn-plus1">
-        <NavLink to="/Ajout_Em">Nouvelle Entreprise</NavLink>
+        <NavLink className='tr' to="/Ajout_Em">Nouvelle Entreprise</NavLink>
       </button>
       <div className="Cont-tableau5">
         <div className="cont-plan5">

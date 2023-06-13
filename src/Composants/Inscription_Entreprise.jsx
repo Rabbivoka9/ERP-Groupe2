@@ -49,7 +49,7 @@ function Ajout_EM() {
     }
   };
   return (
-    <div>
+    <div className="fd">
       <div className="cont-log6">
         <div className="menu-AjoutEM ">
           <div className="titre-connexion">
