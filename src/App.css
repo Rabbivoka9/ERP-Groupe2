@@ -28,7 +28,7 @@ body {
 }
 
 .cont-p5{
-  margin-left: 150px;
+  margin-left: -60px;
   font-size: 25px;
 }
 
@@ -463,7 +463,7 @@ input{
 
 .gcompte{
   margin-top: 200px;
-  margin-left: 225px;
+  margin-left: 75px;
 }
 
 
@@ -581,6 +581,32 @@ input{
  
 }
 
+.FormDelais-Cota14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 406px;
+  height: 345px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  box-shadow:  2px 2px 2px white;
+  margin-left: 60px;
+  margin-top: 540px;
+}
+
+.FormDelais-Cota13 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 406px;
+  height: 345px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  box-shadow:  2px 2px 2px white;
+  margin-left: 5px;
+  margin-top: 540px;
+}
+
 
 
 
@@ -694,6 +720,14 @@ input{
   gap: 30px;
 }
 
+.FormCo12 {
+  display: flex;
+  justify-content: center;
+  margin-left: -1580px;
+  margin-top: -510px;
+  gap: 30px;
+}
+
 
 .FormProd1 {
   display: flex;
@@ -736,7 +770,7 @@ input{
 }
 
 .gcoman{
-  margin-left: 225px;
+  margin-left: 80px;
 }
 
 .FormProd2 {
@@ -774,9 +808,10 @@ input{
 
 .cont-plan {
   margin-top: -40px;
-  margin-left: 60px;
-  width: 703px;
+  margin-left: -99px;
+  width: 1025px;
   height: 57px;
+  box-shadow: 2px 2px 2px #644ACC ;
   border-radius: 20px 20px 0px 0px;
   background-color: #644ACC;
   color: white;
@@ -784,9 +819,10 @@ input{
 
 .cont-plan10{
   margin-top: -40px;
-  margin-left: 60px;
-  width: 703px;
+  margin-left: -95px;
+  width: 1025px;
   height: 57px;
+  box-shadow: 2px 2px 2px #644ACC ;
   border-radius: 20px 20px 0px 0px;
   background-color: #644ACC;
   color: white;
@@ -794,18 +830,19 @@ input{
 
 .cont-plan8 {
   margin-top: -40px;
-  margin-left: 60px;
-  width: 703px;
+  margin-left: -95px;
+  width: 1025px;
   height: 57px;
+  box-shadow: 2px 2px 2px #644ACC ;
   border-radius: 20px 20px 0px 0px;
   background-color: #644ACC;
   color: white;
 }
 
 .Plan-name {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  margin-left: 270px;
+  margin-left: 430px;
   padding: 0px;
 
 }
@@ -825,7 +862,7 @@ input{
   background-color: white;
   border-style: none;
   margin-top: -58px;
-  margin-left: 700px;
+  margin-left: 950px;
 }
 
 .btn-plus1 {
@@ -882,13 +919,13 @@ input{
   width: 836px;
   height: auto;
   border-radius: 20px 20px 20px;
-  margin-left: -1280px;
+  margin-left: -1180px;
   margin-top: 60px;
 }
 
 .df{
-  margin-top: 40px;
-  margin-left: 220px;
+  margin-top: 20px;
+  margin-left: 80px;
 }
 
 .gt{
@@ -921,12 +958,13 @@ input{
   text-align: center;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 2px white;
 }
 
 .ta-titre1{
   color: #644ACC;
-  width: 1000px;
-  margin-left: -105px;
+  width: 1300px;
+  margin-left: -259px;
   height: auto;
   text-align: center;
   background-color: white;
@@ -955,7 +993,7 @@ td{
   width: 336px;
   height: auto;
   border-radius: 20px 20px 20px;
-  margin-left: -1295px;
+  margin-left: -1185px;
   margin-top: 280px;
 }
 
@@ -965,12 +1003,12 @@ td{
   width: 336px;
   height: auto;
   border-radius: 20px 20px 20px;
-  margin-left: -1250px;
+  margin-left: -1190px;
   margin-top: 290px;
 }
 
 .gclient{
-  margin-left: 225PX;
+  margin-left: 80PX;
 }
 
 
@@ -983,6 +1021,7 @@ td{
   width: 1025px;
   height: auto;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 2px 2px 2px #644ACC ;
   background-color: #644ACC;
   color: white;
 }

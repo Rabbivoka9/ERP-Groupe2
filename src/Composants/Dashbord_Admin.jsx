@@ -3,9 +3,9 @@ import Bar from "../Composants/BarRech"
 import RectAmin from "./RectAdmin"
 import RectAdmin2 from "./RectAmin2"
 import RectAdmin3 from "./RectAmin3"
-import FormCota1 from "../Composants/FormCotation"
-import FormCota2 from "../Composants/FormCotation1"
-import FormCota3 from "../Composants/FormCotation3"
+import FormUser1 from "./FormUser"
+import FormUser2 from "./FormUser2"
+import FormUser3 from "./FormUser3"
 
 
 function Dashbord_admin(){
@@ -25,9 +25,9 @@ function Dashbord_admin(){
                     <div className="ligneFar"></div>
                 </div>
                 <div className="FormCo">
-                    <FormCota1/>
-                    <FormCota2/>
-                    <FormCota3/>
+                    <FormUser1/>
+                    <FormUser2/>
+                    <FormUser3/>
                 </div>
             </div>
             
