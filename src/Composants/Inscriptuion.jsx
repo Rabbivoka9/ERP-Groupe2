@@ -98,9 +98,7 @@ function Inscription() {
                 name="email"
                 variant="outlined"
                 error={errors.email ? true : false}
-                helperText={
-                  errors.email ? errors.email.message : ""
-                }
+                helperText={errors.email ? "La Description est requise" : ""}
                 className="input"
                 inputProps={{
                   style: { borderBottom: "0px  #000" },

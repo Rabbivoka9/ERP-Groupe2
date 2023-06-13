@@ -3,7 +3,13 @@ import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReactModal from "react-modal";
-import { TextField } from "@mui/material";
+import {
+  TextField,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
 
 function Ajout_EM() {
   const {
@@ -17,7 +23,7 @@ function Ajout_EM() {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/inscription", data)
+      .post("http://localhost:5000/AjoutEM", data)
       .then((response) => {
         setApiResponse(response.data.message);
         setModalOpen(true);
@@ -35,24 +41,19 @@ function Ajout_EM() {
         }
       });
   };
-
   const closeModal = () => {
     setModalOpen(false);
 
-    if (
-      apiResponse ===
-      "Compte crée avec succès, veuillez consulter votre boite mail"
-    ) {
-      window.location.href = "/";
+    if (apiResponse === "Compte crée avec succès") {
+      window.location.href = "/Entreprise";
     }
   };
-
   return (
-    <div className="Fond-login1">
-      <div className="cont-log">
-        <div className="menu-login1">
+    <div>
+      <div className="cont-log6">
+        <div className="menu-AjoutEM ">
           <div className="titre-connexion">
-            <h5>Inscription</h5>
+            <h5>Nouvelle Entreprise Minière</h5>
           </div>
           <div className="Email1">
             <div className="outlined-basic">
@@ -69,7 +70,6 @@ function Ajout_EM() {
                 }}
               />
             </div>
-
             <div className="outlined-basic">
               <TextField
                 {...register("description", { required: true })}
@@ -84,7 +84,6 @@ function Ajout_EM() {
                 }}
               />
             </div>
-
             <div className="outlined-basic">
               <TextField
                 {...register("email", {
@@ -98,27 +97,16 @@ function Ajout_EM() {
                 name="email"
                 variant="outlined"
                 error={errors.email ? true : false}
-                helperText={
-                  errors.email ? errors.email.message : ""
-                }
+                helperText={errors.email ? "L'email est requis" : ""}
                 className="input"
                 inputProps={{
                   style: { borderBottom: "0px  #000" },
                 }}
               />
             </div>
-
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
-              S'inscrire
+              Ajouter
             </button>
-            <div>
-              <p>
-                Vous avez un compte?{" "}
-                <NavLink to="/" className="ab papi">
-                  Se connecter
-                </NavLink>
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -127,10 +115,12 @@ function Ajout_EM() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
       >
-        <h2 className="titre-api">{JSON.stringify(apiResponse)}</h2>
-        <button className="btn-ferme" onClick={closeModal}>
-          Fermer
-        </button>
+        <div className="modal-content">
+          <h2 className="titre-api">{JSON.stringify(apiResponse)}</h2>
+          <button className="btn-ferme" onClick={closeModal}>
+            Fermer
+          </button>
+        </div>
       </ReactModal>
     </div>
   );

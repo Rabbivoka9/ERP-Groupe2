@@ -52,8 +52,12 @@ body {
 
 }
 
- 
+.bordu8 {
+  display: flex;
+  justify-content: center;
+  margin-left: -200px;
 
+}
 
 .Fond-login {
   background-image: url("/public/Connexion.png");
@@ -69,6 +73,22 @@ body {
   height: 286px;
   width: auto;
 }
+
+.Fond-login7 {
+  background-image: url("/public/Connexion.png");
+  background-size: cover;
+  height: 286px;
+  width: auto;
+  margin-left: -949px;
+}
+
+
+
+
+
+
+
+
 
 .Mod{
   background-color: #644ACC;
@@ -130,6 +150,16 @@ input{
   gap: 20PX;
 }
 
+.cont-log6 {
+  display: flex;
+  justify-content: center;
+  gap: 20PX;
+  margin-left: -1500px;
+  margin-top: 70px;
+}
+
+
+
 .log-icon {
   width: 758px;
 }
@@ -156,6 +186,17 @@ input{
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-top: 160px;
+  text-align: center;
+}
+.menu-AjoutEM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 490px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-top: 230px;
   text-align: center;
 }
 
