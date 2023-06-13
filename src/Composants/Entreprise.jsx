@@ -1,7 +1,25 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { NavLink } from "react-router-dom";
 import BasicMenu from "./Btn";
 
 function Tentrep() {
+  const [entreprises, setEntreprises] = useState([]);
+
+  useEffect(() => {
+    const fetchEntreprises = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/GetEM");
+        console.log(response.data);
+        setEntreprises(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchEntreprises();
+  }, []);
+
   return (
     <div>
       <button className="btn-plus1">
@@ -17,83 +35,25 @@ function Tentrep() {
           <table className="ta-titre ">
             <tbody>
               <tr className="colums,tira">
+                <th>N°</th>
                 <th>Nom_Entreprise</th>
-                <th>Localisation</th>
-                <th>Date</th>
+                <th>Date Ajout</th>
+                <th>Email</th>
                 <th>Action</th>
               </tr>
-              <tr className="trd">
-                <td>Farine 25kg</td>
-                <td> 700</td>
-                <td>Disponible</td>
-                <td>
-                  <span>
-                    <BasicMenu/>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td className="gender"></td>
-                <td>
-                  <span>
-                    <BasicMenu />
-                  </span>
-                </td>
-              </tr>
-              <tr></tr>
+              {entreprises.map((entreprise, i) => (
+                <tr key={entreprise.id}>
+                  <td>{i + 1}</td>
+                  <td>{entreprise.nom}</td>
+                  <td>{entreprise.createdAt}</td>
+                  <td>{entreprise.email}</td>
+                  <td>
+                    <span>
+                      <BasicMenu />
+                    </span>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -101,4 +61,5 @@ function Tentrep() {
     </div>
   );
 }
+
 export default Tentrep;
