@@ -3,7 +3,7 @@ function RectaVend3 (){
            <div className="cont-recta2">
                <div className="block-cota">
                     <div className="contIcon-cotation" ><img className="icon-cotation" src="fou.png" alt="" /></div>
-                    <h3 className="titre-Cotation2">Mes Fournisseurs</h3>
+                    <h3 className="titre-Cotation16">Mes Fournisseurs</h3>
                </div>
                <h2 className="Nbre-Cotation">24</h2>
                <hr className="ligne-cotation" />

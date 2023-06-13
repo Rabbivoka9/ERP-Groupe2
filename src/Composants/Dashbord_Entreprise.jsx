@@ -1,6 +1,6 @@
 import Header_entreprise from "./Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import RectVend1 from "./RectAdmin"
+import RectaVend0 from "./ReactVend"
 import RectaVend2 from "./ReactVend2"
 import RectaVend3 from "./ReactaVend3"
 import FormCot1 from "./FormCota1"
@@ -18,7 +18,7 @@ function Dashbord_Entreprise(){
             </div>
             <div className="gb">
                 <div className="contToutrecta">
-                    <RectVend1/>
+                    <RectaVend0/>
                     <RectaVend2/>
                     <RectaVend3/>
                     <h3 className="titreFar">Cotations Recents</h3>

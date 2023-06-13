@@ -382,6 +382,29 @@ input{
   text-align: left;
 }
 
+.titre-Cotation12 {
+  margin-top: 70px;
+  margin-left: 60px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.titre-Cotation13 {
+  margin-top: 70px;
+  margin-left: 70px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.titre-Cotation16 {
+  margin-top: 70px;
+  margin-left: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
 .titre-Cotation1 {
   margin-left: 40px;
   margin-top: 70px;
