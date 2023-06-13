@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { Edit, Delete, Visibility } from "@mui/icons-material";
 import BasicMenu from "./Btn";
 
 function Tentrep() {
@@ -20,6 +21,18 @@ function Tentrep() {
     fetchEntreprises();
   }, []);
 
+  const handleEdit = (id) => {
+    // Gérer l'édition de l'entreprise avec l'ID fourni
+  };
+
+  const handleDelete = (id) => {
+    // Gérer la suppression de l'entreprise avec l'ID fourni
+  };
+
+  const handleViewMore = (id) => {
+    // Gérer l'affichage détaillé de l'entreprise avec l'ID fourni
+  };
+
   return (
     <div>
       <button className="btn-plus1">
@@ -32,9 +45,9 @@ function Tentrep() {
           </div>
         </div>
         <div>
-          <table className="ta-titre ">
+          <table className="ta-titre">
             <tbody>
-              <tr className="colums,tira">
+              <tr className="colums, tira">
                 <th>N°</th>
                 <th>Nom_Entreprise</th>
                 <th>Date Ajout</th>
@@ -49,7 +62,15 @@ function Tentrep() {
                   <td>{entreprise.email}</td>
                   <td>
                     <span>
-                      <BasicMenu />
+                      <button className="btnicon" onClick={() => handleEdit(entreprise.id)}>
+                        <Edit />
+                      </button>
+                      <button className="btnicon" onClick={() => handleDelete(entreprise.id)}>
+                        <Delete />
+                      </button>
+                      <button className="btnicon" onClick={() => handleViewMore(entreprise.id)}>
+                        <Visibility />
+                      </button>
                     </span>
                   </td>
                 </tr>

@@ -188,6 +188,16 @@ input{
   margin-top: 160px;
   text-align: center;
 }
+.btnicon{
+  border-style:none ;
+  background-color: white;
+
+}
+.btnicon:focus{
+  border-style:none ;
+  background-color: white;
+  
+}
 .menu-AjoutEM {
   display: flex;
   flex-direction: column;
