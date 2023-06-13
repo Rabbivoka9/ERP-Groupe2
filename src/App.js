@@ -23,6 +23,7 @@ import Entreprise from './Pages/Entreprise';
 import Vendeur from './Pages/Vendeur';
 import Articles from './Pages/Articles';
 import Dashbord_admin from './Composants/Dashbord_Admin';
+import Ajout_Em from './Pages/Ajout_EM';
 
 // Définir l'élément racine de votre application
 Modal.setAppElement('#root');
@@ -51,12 +52,8 @@ function App() {
        <Route path="/Dashbord_Admin" element={<Dashbord_admin/>}></Route>
        <Route path="/Dashbord_Entreprise" element={<Dashbord_Entreprise/>}></Route>
        <Route path="/Conf_Admin" element={<Configuration_Admin/>}></Route>
-      
-
-
+       <Route path="/Ajout_Em" element={<Ajout_Em/>}></Route>
        <Route path="/Conf" element={<Configuration/>}></Route>
-
-      
      </Routes>
     </BrowserRouter>
   );
