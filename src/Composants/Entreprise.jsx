@@ -4,33 +4,39 @@ import { NavLink } from "react-router-dom";
 import { Edit, Delete, Visibility } from "@mui/icons-material";
 import BasicMenu from "./Btn";
 
+
 function Tentrep() {
   const [entreprises, setEntreprises] = useState([]);
 
-  useEffect(() => {
-    const fetchEntreprises = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/GetEM");
-        console.log(response.data);
-        setEntreprises(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  const fetchEntreprises = async () => {
+    try {
+      const response = await axios.get("http://localhost:5000/GetEM");
+  
+      setEntreprises(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
+  useEffect(() => {
     fetchEntreprises();
   }, []);
 
-  const handleEdit = (id) => {
-    // Gérer l'édition de l'entreprise avec l'ID fourni
+  const handleEdit = async (id) => {
+    try {
+      const response = await axios.get(`http://localhost:5000/GetEMId/${id}`);
+      const entreprise = response.data;
+  
+      window.location.href = `/Edit_EntepriseEM/${id}`;
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const handleDelete = (id) => {
-    // Gérer la suppression de l'entreprise avec l'ID fourni
   };
 
   const handleViewMore = (id) => {
-    // Gérer l'affichage détaillé de l'entreprise avec l'ID fourni
   };
 
   return (

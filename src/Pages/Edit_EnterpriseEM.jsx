@@ -1,9 +1,9 @@
 import Header_Admin from "../Composants/Navbar_Admin";
 import Bar from "../Composants/BarRech";
-import Edit_EntepriseEm from "../Composants/Edit_EntepriseEm";
-import '../Pages/styles/Ajout_EM.css'
+import Edit_EntepriseEM from "../Composants/Edit_EntepriseEm";
 
-function Ajout_Em() {
+
+function Edit_EntepriseEm() {
   return (
     <div className="tout1">
       <div className="bordu8">
@@ -11,9 +11,9 @@ function Ajout_Em() {
         <Bar />
       </div>
       <div className="formulaire">
-        <Edit_EntepriseEm/>
+        <Edit_EntepriseEM/>
       </div>
     </div>
   );
 }
-export default Ajout_Em;
+export default Edit_EntepriseEm;
