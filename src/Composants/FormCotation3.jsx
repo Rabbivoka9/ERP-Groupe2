@@ -1,3 +1,5 @@
+import { Visibility } from "@mui/icons-material"
+
 function FormCota3(){
     return(
         <div className="FormDelais-Cota3">
@@ -12,7 +14,7 @@ function FormCota3(){
                     <img className="icon-time" src="time.png" alt="" />
                     <p className="date">Samedi 10 juin 2023</p>
                 </div>
-                <button className="btn-voirPlus">Voir Plus</button>
+                <button className="btn-voirPlus"><Visibility/></button>
             </div>
         </div>
     )

@@ -141,6 +141,7 @@ input{
 .contbarv{
   display: flex;
   justify-content: center;
+  margin-left: 250px;
 }
 
 
@@ -298,29 +299,32 @@ input{
 }
 
 .cont-recta {
-  width: 297px;
-  height: 132px;
+  width: 397px;
+  height: 232px;
   background-color: white;
-  margin-left: -1400px;
+  margin-left: -1450px;
   margin-top: 250px;
+  box-shadow: 2px 2px  white;
   border-radius: 15px 15px 15px;
 }
 
 .cont-recta1 {
-  width: 297px;
-  height: 132px;
+  width: 397px;
+  height: 232px;
   background-color: white;
   margin-left: -1000px;
-  margin-top: -130px;
+  margin-top: -230px;
+  box-shadow: 2px 2px  white;
   border-radius: 15px 15px 15px;
 }
 
 .cont-recta2 {
-  width: 297px;
-  height: 132px;
+  width: 397px;
+  height: 232px;
   background-color: white;
-  margin-left: -600px;
-  margin-top: -130px;
+  margin-left: -570px;
+  margin-top: -230px;
+  box-shadow: 2px 2px  white;
   border-radius: 15px 15px 15px;
 }
 
@@ -328,33 +332,37 @@ input{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: -20px;
-  margin-left: 100px;
+  margin-top: -50px;
+  margin-left: 90px;
+  padding-left: 20px;
 }
 
 
 .titre-Cotation {
-  margin-left: 30px;
-  font-size: 15px;
+  margin-top: 70px;
+  margin-left: -20px;
+  font-size: 20px;
   text-align: left;
 }
 
 .titre-Cotation1 {
-  margin-left: 80px;
-  font-size: 15px;
+  margin-left: 40px;
+  margin-top: 70px;
+  font-size: 20px;
   text-align: left;
 }
 
 .titre-Cotation2 {
-  margin-left: 98px;
-  font-size: 15px;
+  margin-top: 70px;
+  margin-left: 60px;
+  font-size: 20px;
   text-align: left;
 }
 
 .ligneFar {
   background-color: #644ACC;
   margin-top: -15px;
-  margin-left: -1398px;
+  margin-left: -1450px;
   width: 69px;
   height: 5px;
 }
@@ -362,16 +370,16 @@ input{
 
 .titreFar {
   margin-top: 40px;
-  margin-left: -1400px;
-  width: 256px;
+  margin-left: -1450px;
+  width: 456px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .Nbre-Cotation {
-  margin-left: 200px;
+  margin-left: 180px;
   margin-top: -14px;
-  font-size: 32px;
+  font-size: 52px;
   font-weight: bold;
 }
 
@@ -388,23 +396,25 @@ input{
   width: 44px;
   height: 39px;
   margin-top: 7px;
-  margin-left: 12px;
+  margin-left: 23px;
 }
 
 .contIcon-cotation {
   margin-top: -30px;
   margin-left: 25px;
-  width: 70px;
-  height: 52px;
+  width: 90px;
+  height: 62px;
+  box-shadow: 1px 1px #644ACC;
   background-color: #644ACC;
   border-radius: 10px 10px 10px;
 }
 
 .contIcon-cotation1 {
+  box-shadow: 1px 1px #FA4949;
   margin-top: -30px;
   margin-left: 25px;
-  width: 70px;
-  height: 52px;
+  width: 90px;
+  height: 62px;
   background-color: #FA4949;
   border-radius: 10px 10px 10px;
 }
@@ -456,7 +466,7 @@ input{
   width: 271px;
   background-color: #644ACC;
   margin-top: 60px;
-  margin-left: -40px;
+  margin-left: 220px;
   border-radius: 20px 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
@@ -467,10 +477,10 @@ input{
   display: flex;
   flex-direction: column;
   height: 900px;
-  width: 271px;
+  width: 311px;
   background-color: #644ACC;
   margin-top: 70px;
-  margin-left: 60px;
+  margin-left: 50px;
   border-radius: 20px 20px;
   box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.4);
 
@@ -481,21 +491,24 @@ input{
   display: flex;
   flex-direction: column;
   height: 900px;
-  width: 271px;
+  width: 311px;
   background-color: #644ACC;
   margin-top: 70px;
-  margin-left: -40px;
+  margin-left: 50px;
   border-radius: 20px 20px;
+  box-shadow:  2px 2px 1px rgba(0, 0, 0, 0.4);
 
 }
 
 .gb{
-  margin-left: 220px;
-  margin-top: 60px;
+  margin-left: -30px;
+  margin-top: -10px;
 }
 
 .papi {
   margin-top: -17px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .icon23 {
@@ -528,28 +541,39 @@ input{
 }
 
 .btn23 {
+  display: flex;
+  flex-direction: column;
   margin-top: 220px;
+  margin-left: -220px;
+  gap: 20px;
+  
 }
 
 .btn34 {
   display: flex;
-  margin-top: 30px;
+  margin-top: 170px;
+ 
+ 
 }
 
 
 
 
 .FormDelais-Cota {
-  width: 306px;
-  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 406px;
+  height: 345px;
   background-color: white;
   border-radius: 20px 20px 20px;
+  box-shadow:  2px 2px 2px white;
   margin-left: -1400px;
   margin-top: 540px;
 }
 
 .Nom-client {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   margin-left: 30px;
 }
@@ -559,32 +583,33 @@ input{
 }
 
 .Nom-Produit {
-  font-size: 14px;
+  font-size: 20px;
   margin-left: 5px;
 }
 
 .boule-vert {
   margin-left: 30px;
   margin-top: 23px;
-  width: 13px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
   background-color: #4ACC67;
   border-radius: 20px 20px 20px;
 }
 
 .icon-time {
-  width: 13px;
-  height: 13px;
-  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
 }
 
 .dispo-hor-date {
   display: flex;
-  gap: 3px;
+  justify-content: center;
+  gap: 13px;
 }
 
 .date {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .btn-voirPlus {
@@ -592,6 +617,9 @@ input{
   font-size: 14px;
   color: #644ACC;
   border-style: none;
+  margin-left: 50px;
+  width: 70px;
+  height: 7Opx;
 }
 
 .dispoGen-datHor-voir {
@@ -603,7 +631,7 @@ input{
 
 .ligne-cotation1 {
   margin-top: 80px;
-  width: 235px;
+  width: 335px;
 }
 
 
@@ -611,9 +639,10 @@ input{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 306px;
-  height: 245px;
+  width: 406px;
+  height: 345px;
   background-color: white;
+  box-shadow:  2px 2px 2px white;
   border-radius: 20px 20px 20px;
   margin-left: 0px;
   margin-top: 540px;
@@ -622,9 +651,11 @@ input{
 .FormDelais-Cota3 {
   display: flex;
   flex-direction: column;
-  width: 306px;
-  height: 245px;
+  justify-content: center;
+  width: 406px;
+  height: 345px;
   background-color: white;
+  box-shadow:  2px 2px 2px white;
   border-radius: 20px 20px 20px;
   margin-left: 0px;
   margin-top: 540px;
@@ -633,9 +664,9 @@ input{
 .FormCo {
   display: flex;
   justify-content: center;
-  margin-left: -220px;
-  margin-top: -460px;
-  gap: 90px;
+  margin-left: -130px;
+  margin-top: -510px;
+  gap: 30px;
 }
 
 
