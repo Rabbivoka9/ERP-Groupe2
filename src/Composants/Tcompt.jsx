@@ -14,7 +14,7 @@ function TabCompt (){
                 </div>
                 <div>
                 <table className="ta-titre1 ">
-          <tbody>
+               <tbody>
            
                <tr className="colums,tira" >
                   <th>Date</th>

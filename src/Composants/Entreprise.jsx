@@ -10,7 +10,7 @@ function Tentrep() {
 
   const fetchEntreprises = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/GetEM");
+      const response = await axios.get("http://192.168.43.191:5000/GetEM");
   
       setEntreprises(response.data);
     } catch (error) {
@@ -24,7 +24,7 @@ function Tentrep() {
 
   const handleEdit = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:5000/GetEMId/${id}`);
+      const response = await axios.get(`http://192.168.43.191:5000/GetEMId/${id}`);
       const entreprise = response.data;
   
       window.location.href = `/Edit_EntepriseEM/${id}`;

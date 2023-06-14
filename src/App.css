@@ -763,6 +763,11 @@ input{
   height: 7Opx;
 }
 
+.btn-voirPlus:focus{
+  background-color: white;
+}
+
+
 .dispoGen-datHor-voir {
   display: flex;
   margin-left: 30px;
@@ -954,6 +959,14 @@ input{
   margin-top: -58px;
   margin-left: 950px;
 }
+
+.btn-plus:focus {
+  background-color: none;
+ 
+}
+
+
+
 
 .btn-plus1 {
   background-color: white;
