@@ -3,14 +3,19 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { Edit, Delete, Visibility } from "@mui/icons-material";
 import BasicMenu from "./Btn";
+import ReactModal from "react-modal";
+
 
 
 function Tentrep() {
   const [entreprises, setEntreprises] = useState([]);
+  const [idEntreprise, setEntrepriseId] = useState();
+
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const fetchEntreprises = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/GetEM");
+      const response = await axios.get("http://192.168.43.191:5000/GetEM");
   
       setEntreprises(response.data);
     } catch (error) {
@@ -18,13 +23,18 @@ function Tentrep() {
     }
   };
 
+  const confirm=(id)=>{
+    setEntrepriseId(id)
+    setModalOpen(true);
+  }
+
   useEffect(() => {
     fetchEntreprises();
   }, []);
 
   const handleEdit = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:5000/GetEMId/${id}`);
+      const response = await axios.get(`http://192.168.43.191:5000/GetEMId/${id}`);
       const entreprise = response.data;
   
       window.location.href = `/Edit_EntepriseEM/${id}`;
@@ -33,12 +43,23 @@ function Tentrep() {
     }
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = async (id) => {
+    try {
+      await axios.put(`http://192.168.43.191:5000/DeleteEM/${id}`);
+      fetchEntreprises(); 
+    } catch (error) {
+      console.error(error);
+    }
+    setModalOpen(false);
   };
 
   const handleViewMore = (id) => {
   };
+  const closeModal = () => {
+    setModalOpen(false);
 
+    
+  };
   return (
     <div className="Ent">
       <button className="btn-plus1">
@@ -58,6 +79,7 @@ function Tentrep() {
                 <th>Nom_Entreprise</th>
                 <th>Date Ajout</th>
                 <th>Email</th>
+                <th>Etat</th>
                 <th>Action</th>
               </tr>
               {entreprises.map((entreprise, i) => (
@@ -66,12 +88,13 @@ function Tentrep() {
                   <td>{entreprise.nom}</td>
                   <td>{entreprise.createdAt}</td>
                   <td>{entreprise.email}</td>
+                  <td>{entreprise.etat}</td>
                   <td>
                     <span>
                       <button className="btnicon" onClick={() => handleEdit(entreprise.id)}>
                         <Edit />
                       </button>
-                      <button className="btnicon" onClick={() => handleDelete(entreprise.id)}>
+                      <button className="btnicon" onClick={() => confirm(entreprise.id)}>
                         <Delete />
                       </button>
                       <button className="btnicon" onClick={() => handleViewMore(entreprise.id)}>
@@ -85,7 +108,23 @@ function Tentrep() {
           </table>
         </div>
       </div>
+      <ReactModal
+        className="Mod"
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+      >
+        <div className="modal-content">
+        <h2 className="titre-api">Voulez-vous vraiment supprimer cet Entreprise ?</h2>
+          <button className="btn-ferme" onClick={() => handleDelete(idEntreprise)}>
+            OUI
+          </button>
+          <button className="btn-ferme" onClick={closeModal}>
+           NON
+          </button>
+        </div>
+      </ReactModal>
     </div>
+    
   );
 }
 
