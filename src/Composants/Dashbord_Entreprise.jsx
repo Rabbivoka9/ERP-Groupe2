@@ -5,7 +5,7 @@ import RectaVend2 from "./ReactVend2"
 import RectaVend3 from "./ReactaVend3"
 import FormCot1 from "./FormCota1"
 import FormCot2 from "./FormCota2"
-import FormCota3 from "../Composants/FormCotation3"
+import FormCot3 from "./FormCota3"
 
 
 function Dashbord_Entreprise(){
@@ -27,7 +27,7 @@ function Dashbord_Entreprise(){
                 <div className="FormCo12">
                      <FormCot2/>
                     <FormCot1/>
-                    <FormCota3/>
+                    <FormCot3/>
                     
                 </div>
             </div>
