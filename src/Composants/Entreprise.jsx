@@ -97,9 +97,7 @@ function Tentrep() {
                       <button className="btnicon" onClick={() => confirm(entreprise.id)}>
                         <Delete />
                       </button>
-                      <button className="btnicon" onClick={() => handleViewMore(entreprise.id)}>
-                        <Visibility />
-                      </button>
+                      
                     </span>
                   </td>
                 </tr>
@@ -119,7 +117,7 @@ function Tentrep() {
             OUI
           </button>
           <button className="btn-ferme" onClick={closeModal}>
-           NON
+            NON
           </button>
         </div>
       </ReactModal>
