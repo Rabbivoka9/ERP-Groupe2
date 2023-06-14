@@ -27,7 +27,6 @@ import Edit_EntepriseEm from './Pages/Edit_EnterpriseEM';
 
 import Ajout_Em from './Pages/Ajout_EM';
 
-// Définir l'élément racine de votre application
 Modal.setAppElement('#root');
 
 function App() {
