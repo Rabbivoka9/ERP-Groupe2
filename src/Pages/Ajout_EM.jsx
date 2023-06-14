@@ -1,6 +1,6 @@
 import Header_Admin from "../Composants/Navbar_Admin";
 import Bar from "../Composants/BarRech";
-import Edit_EntepriseEm from "../Composants/Edit_EntepriseEm";
+import Ajout_EM from "../Composants/Inscription_Entreprise";
 import '../Pages/styles/Ajout_EM.css'
 
 function Ajout_Em() {
@@ -11,7 +11,7 @@ function Ajout_Em() {
         <Bar />
       </div>
       <div className="formulaire">
-        <Edit_EntepriseEm/>
+        <Ajout_EM/>
       </div>
     </div>
   );
