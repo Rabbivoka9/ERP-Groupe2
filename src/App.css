@@ -389,6 +389,11 @@ input{
   text-align: left;
 }
 
+
+.vw:hover{
+     color: #545455;
+}
+
 .titre-Cotation13 {
   margin-top: 70px;
   margin-left: 70px;
@@ -565,11 +570,23 @@ input{
   margin-top: -10px;
 }
 
+.vc{
+  margin-left: 20px;
+}
+
 .papi {
   margin-top: -17px;
   font-size: 18px;
   font-weight: bold;
 }
+
+.papi1 {
+  margin-top: -20px;
+  margin-left: -25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 .icon23 {
   width: 29px;
@@ -579,6 +596,7 @@ input{
 
 .btn31 {
   display: flex;
+  
 }
 
 .btn32 {
@@ -591,7 +609,44 @@ input{
 
 .btn37 {
   display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  padding-top: 10px;
 }
+
+
+/* .isActive:hover,
+.active .isActive{
+  background: #000;
+  width: 210px;
+  height: 50px;
+} */
+
+.isActive:hover,
+.active .isActive {
+  background: #7c7a7a;
+  color: #fff;
+  width: 210px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.isActive:active,
+.isActive:focus {
+  background: #949292;
+  color: #fff;
+  outline: none;
+}
+
+
+.no-autoinit .nav-wrapper li a:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  cursor: default !important;
+}
+
+
+
 
 .ligne {
   background-color: white;

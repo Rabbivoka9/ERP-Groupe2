@@ -7,7 +7,7 @@ function Header_Admin() {
   return (
     <div>
       <Navbar
-        className="nav_Admin"
+        className="nav_Admin  no-autoinit"
         alignLinks="right"
         brand={
           <a className="brand-logo" href="/">
@@ -33,36 +33,36 @@ function Header_Admin() {
         }}
       >
         <div className="btn23">
-          <div className="btn31">
-            <div>
+          <div className="btn31 isActive">
+            <div className="vc">
               <img className="icon23" src="tb.png" alt="" />
             </div>
-            <div className="vw">
-              <NavLink to="/Dashbord_Admin" className=" papi">
+            <div className="btn37">
+              <NavLink to="/Dashbord_Admin" className=" papi1">
                 Tableau de Bord
               </NavLink>
             </div>
           </div>
           
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="Entr.png" alt="" />
             <NavLink to="/Entreprise" className=" papi">
               Entreprises
             </NavLink>
           </div>
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="Vend.png" alt="" />
             <NavLink to="/Articles" className=" papi">
               Articles
             </NavLink>
           </div>
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="CliV.png" alt="" />
             <NavLink to="/Vendeur" className=" papi">
               Vendeurs
             </NavLink>
           </div>
-          <div className="btn34">
+          <div className="btn34 ">
             <img className="icon23" src="para.png" alt="" />
             <NavLink to="/Conf_Admin" className=" papi">
               Paramétres
