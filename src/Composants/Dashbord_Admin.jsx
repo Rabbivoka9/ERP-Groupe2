@@ -11,7 +11,6 @@ import FormUser3 from "./FormUser3"
 function Dashbord_admin(){
     return(
         <div className="tout1">
-            
             <div className="bordu">
                 <Header_Admin/>
                 <Bar/>
@@ -30,10 +29,6 @@ function Dashbord_admin(){
                     <FormUser3/>
                 </div>
             </div>
-            
-            
-
-
             
         </div>
     )
