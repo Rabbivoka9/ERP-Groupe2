@@ -11,7 +11,6 @@ import FormCota3 from "../Composants/FormCotation3"
 function Dashbord_admin(){
     return(
         <div className="tout1">
-            
             <div className="bordu">
                 <Header_Admin/>
                 <Bar/>
@@ -30,10 +29,6 @@ function Dashbord_admin(){
                     <FormCota3/>
                 </div>
             </div>
-            
-            
-
-
             
         </div>
     )
