@@ -10,8 +10,8 @@ function Edit_EntepriseEm() {
         < Header_Admin />
         <Bar />
       </div>
-      <div className="formulaire">
-        <Edit_EntepriseEM/>
+      <div className="formulaire"> 
+        <Edit_EntepriseEM/> 
       </div>
     </div>
   );
