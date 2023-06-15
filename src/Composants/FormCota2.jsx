@@ -5,7 +5,7 @@ import { Visibility } from "@mui/icons-material"
 function FormCot2(){
     return(
         <div className="FormDelais-Cota14">
-            <h4 className="Nom-client">Rita ZAWADI</h4>
+            <h4 className="Nom-client">Mamita VOKA</h4>
             <div className="dispo-nonProsuit">
                 <div className="boule-vert"></div>
                 <h4 className="Nom-Produit">Cotation Decoration</h4>
