@@ -7,7 +7,7 @@ function Header_entreprise() {
   return (
     <div>
       <Navbar
-        className="nav_Vendeur "
+        className="nav_Vendeur no-autoinit "
         alignLinks="right"
         brand={
           <a className="brand-logo" href="/">
@@ -33,12 +33,12 @@ function Header_entreprise() {
         }}
       >
         <div className="btn23">
-          <div className="btn31">
-            <div>
+          <div className="btn31 isActive">
+            <div className="vc">
               <img className="icon23" src="tb.png" alt="" />
             </div>
             <div className="vw">
-              <NavLink to="/Dashbord_Entreprise" className=" papi">
+              <NavLink to="/Dashbord_Entreprise" className=" papi2">
                 Tableau de Bord
               </NavLink>
             </div>
@@ -46,25 +46,25 @@ function Header_entreprise() {
          
          
          
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="edi.png" alt="" />
             <NavLink to="/Dcotation" className=" papi">
               Cotation
             </NavLink>
           </div>
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="gestion.png" alt="" />
             <NavLink to="/Goffres" className=" papi">
               Gestion d'Offres
             </NavLink>
           </div>
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="fou.png" alt="" />
             <NavLink to="/fournisseurs" className=" papi">
-              Mes Fournisseurs
+              Fournisseurs
             </NavLink>
           </div>
-          <div className="btn37">
+          <div className="btn37 isActive">
             <img className="icon23" src="commande.png" alt="" />
             <NavLink to="/CommandeEm" className=" papi">
               Commandes

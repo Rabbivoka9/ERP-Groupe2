@@ -17,6 +17,10 @@ body {
   font-weight: bold;
 }
 
+.textarea.materialize-textarea:focus{
+  background-color: white;
+}
+
 .fd{
 
   margin-left: -70px;
@@ -390,9 +394,7 @@ input{
 }
 
 
-.vw:hover{
-     color: #545455;
-}
+
 
 .titre-Cotation13 {
   margin-top: 70px;
@@ -583,6 +585,13 @@ input{
 .papi1 {
   margin-top: -20px;
   margin-left: -25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.papi2 {
+  margin-top: -10px;
+  margin-left: -5px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -963,6 +972,10 @@ input{
 .btn-plus:focus {
   background-color: none;
  
+}
+
+.btn-plus1:focus{
+  background-color: white;
 }
 
 

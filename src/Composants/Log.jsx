@@ -78,15 +78,8 @@ function Login() {
               variant="outlined"
               error={errors.password ? true : false}
               helperText={errors.password ? "Le mot de passe est requis" : ""}
-              InputProps={{
-                style: { borderBottom: "0px solid #ffff" },
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton onClick={handleClickShowPassword}>
-                      {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                  </InputAdornment>
-                ),
+              inputProps={{
+                style: { borderBottom: "0px solid #000" },
               }}
             />
 

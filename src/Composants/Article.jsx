@@ -266,7 +266,7 @@ function Tarticle() {
         formData.append("photo", photo);
       }
 
-      await axios.post("http://localhost:5000/articles", formData);
+      await axios.post("http://192.168.254.169:5000/articles", formData);
 
       // Affiche un message de succès
       toast.success("Article créé avec succès");

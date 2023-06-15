@@ -7,7 +7,7 @@ function Header_Admin() {
   return (
     <div>
       <Navbar
-        className="nav_Admin  no-autoinit"
+        className="nav_Admin  "
         alignLinks="right"
         brand={
           <a className="brand-logo" href="/">
@@ -33,7 +33,7 @@ function Header_Admin() {
         }}
       >
         <div className="btn23">
-          <div className="btn31 isActive">
+          <div className="btn31 ">
             <div className="vc">
               <img className="icon23" src="tb.png" alt="" />
             </div>
@@ -44,19 +44,19 @@ function Header_Admin() {
             </div>
           </div>
           
-          <div className="btn37 isActive">
+          <div className="btn37 ">
             <img className="icon23" src="Entr.png" alt="" />
             <NavLink to="/Entreprise" className=" papi">
               Entreprises
             </NavLink>
           </div>
-          <div className="btn37 isActive">
+          <div className="btn37 ">
             <img className="icon23" src="Vend.png" alt="" />
             <NavLink to="/Articles" className=" papi">
               Articles
             </NavLink>
           </div>
-          <div className="btn37 isActive">
+          <div className="btn37 ">
             <img className="icon23" src="CliV.png" alt="" />
             <NavLink to="/Vendeur" className=" papi">
               Vendeurs
