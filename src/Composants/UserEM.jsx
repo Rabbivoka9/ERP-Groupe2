@@ -1,23 +1,24 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReactModal from "react-modal";
 import { TextField } from "@mui/material";
 
 function UserEM() {
+  const { id } = useParams();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const [showPassword, setShowPassword] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [apiResponse, setApiResponse] = useState("");
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5000/inscription", data)
+      .post(`http://localhost:5000/UserEM/${id}`, data)
       .then((response) => {
         setApiResponse(response.data.message);
         setModalOpen(true);
@@ -41,7 +42,7 @@ function UserEM() {
 
     if (
       apiResponse ===
-      "Compte crée avec succès, veuillez consulter votre boite mail"
+      "Compte crée avec succès"
     ) {
       window.location.href = "/";
     }
@@ -52,40 +53,38 @@ function UserEM() {
       <div className="cont-log">
         <div className="menu-login1">
           <div className="titre-connexion">
-            <h5>Inscription</h5>
+            <h5>Creation Compte Utilisateur</h5>
           </div>
           <div className="Email1">
-            <div className="outlined-basic">
-              <TextField
-                {...register("nom", { required: true })}
-                label="Nom"
-                name="nom"
-                variant="outlined"
-                error={errors.email ? true : false}
-                helperText={errors.email ? "Le nom est requis" : ""}
-                className="input"
-                inputProps={{
-                  style: { borderBottom: "0px  #000" },
-                }}
-              />
-            </div>
-
-            <div className="outlined-basic">
-              <TextField
-                {...register("description", { required: true })}
-                label="Description"
-                name="description"
-                variant="outlined"
-                error={errors.email ? true : false}
-                helperText={errors.email ? "La Description est requise" : ""}
-                className="input"
-                inputProps={{
-                  style: { borderBottom: "0px  #000" },
-                }}
-              />
-            </div>
-
-            <div className="outlined-basic">
+           
+              <div className="outlined-basic">
+                <TextField
+                  {...register("username", { required: true })}
+                  label="username"
+                  name="username"
+                  variant="outlined"
+                  error={errors.email ? true : false}
+                  helperText={errors.email ? "Le nom est requis" : ""}
+                  className="input"
+                  inputProps={{
+                    style: { borderBottom: "0px  #000" },
+                  }}
+                />
+              </div>
+              <div className="outlined-basic">
+                <TextField
+                  {...register("telephone", { required: true })}
+                  label="telephone"
+                  name="telephone"
+                  variant="outlined"
+                  error={errors.email ? true : false}
+                  helperText={errors.email ? "Le nom est requis" : ""}
+                  className="input"
+                  inputProps={{
+                    style: { borderBottom: "0px  #000" },
+                  }}
+                />
+              </div>
               <TextField
                 {...register("email", {
                   required: true,
@@ -104,19 +103,33 @@ function UserEM() {
                   style: { borderBottom: "0px  #000" },
                 }}
               />
-            </div>
-
+            <TextField
+              className="outlined-basic"
+              {...register("pwd", { required: true })}
+              label="Mot de passe"
+              type={showPassword ? "text" : "password"}
+              variant="outlined"
+              error={errors.password ? true : false}
+              helperText={errors.password ? "Le mot de passe est requis" : ""}
+              InputProps={{
+                style: { borderBottom: "0px solid #ffff" },
+              }}
+            />
+            <TextField
+              className="outlined-basic"
+              {...register("pwdConfirm", { required: true })}
+              label="Confirmation mot de passe"
+              type={showPassword ? "text" : "password"}
+              variant="outlined"
+              error={errors.password ? true : false}
+              helperText={errors.password ? "Le mot de passe est requis" : ""}
+              InputProps={{
+                style: { borderBottom: "0px solid #ffff" },
+              }}
+            />
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
-              S'inscrire
+              Creer
             </button>
-            <div>
-              <p>
-                Vous avez un compte?{" "}
-                <NavLink to="/" className="ab papi">
-                  Se connecter
-                </NavLink>
-              </p>
-            </div>
           </div>
         </div>
       </div>
