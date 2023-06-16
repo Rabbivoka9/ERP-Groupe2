@@ -36,6 +36,17 @@ body {
   font-size: 25px;
 }
 
+.btn-ferme1{
+  width: 200px;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 20px 20px;
+  font-weight: bold;
+  background-color: rgb(239, 7, 7);
+  color: #ffffff;
+  border-style: none;
+}
+
 
 
 
@@ -250,6 +261,13 @@ input{
   border-style: none;
   margin-top: 40px;
   gap: 20Px;
+}
+
+.btn-tous{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
 }
 
 

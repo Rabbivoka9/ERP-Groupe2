@@ -113,12 +113,16 @@ function Tentrep() {
       >
         <div className="modal-content">
         <h2 className="titre-api">Voulez-vous vraiment supprimer cet Entreprise ?</h2>
-          <button className="btn-ferme" onClick={() => handleDelete(idEntreprise)}>
-            OUI
-          </button>
-          <button className="btn-ferme" onClick={closeModal}>
-            NON
-          </button>
+
+          <div className="btn-tous">
+            <button className="btn-ferme1" onClick={() => handleDelete(idEntreprise)}>
+              OUI
+            </button>
+            <button className="btn-ferme" onClick={closeModal}>
+              NON
+            </button>
+          </div>
+          
         </div>
       </ReactModal>
     </div>
