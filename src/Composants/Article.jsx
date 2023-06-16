@@ -31,31 +31,19 @@ function Tarticle() {
   };
 
   const handleNomChange = (e) => {
-    setSelectedArticle((prevArticle) => ({
-      ...prevArticle,
-      nom: e.target.value,
-    }));
+    setNom(e.target.value);
   };
 
   const handleDescriptionChange = (e) => {
-    setSelectedArticle((prevArticle) => ({
-      ...prevArticle,
-      description: e.target.value,
-    }));
+    setDescription(e.target.value);
   };
 
   const handleQuantiteChange = (e) => {
-    setSelectedArticle((prevArticle) => ({
-      ...prevArticle,
-      quantite: e.target.value,
-    }));
+    setQuantite(e.target.value);
   };
 
   const handlePhotoChange = (e) => {
-    setSelectedArticle((prevArticle) => ({
-      ...prevArticle,
-      photo: e.target.files[0],
-    }));
+    setPhoto(e.target.files[0]);
   };
 
   const handleSubmit = async (e) => {
@@ -139,7 +127,8 @@ function Tarticle() {
   const handleEditArticle = async (articleId) => {
     try {
       const response = await axios.get(`http://localhost:5000/articles/${articleId}`);
-      setSelectedArticle(response.data.article);
+      const { nom, description, quantite, photo } = response.data.article;
+      setSelectedArticle({ id: articleId, nom, description, quantite, photo });
     } catch (error) {
       console.error("Une erreur est survenue lors de la récupération de l'article :", error);
       toast.error("Une erreur est survenue lors de la récupération de l'article");
@@ -250,40 +239,51 @@ function Tarticle() {
       )}
 
       {showForm && (
-        <div className="form-container">
-          <div className="form">
-            <h2>Ajouter un article</h2>
+        <div className="pop-up-container">
+          <div className="pop-up">
+            <h4>Créer un nouvel article</h4>
             <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="Nom"
-                value={nom}
-                onChange={(e) => setNom(e.target.value)}
-              />
-              <input
-                type="text"
-                placeholder="Description"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              />
-              <input
-                type="number"
-                placeholder="Quantité"
-                value={quantite}
-                onChange={(e) => setQuantite(e.target.value)}
-              />
-              <input
-                type="file"
-                placeholder="Photo"
-                accept="image/*"
-                onChange={(e) => setPhoto(e.target.files[0])}
-              />
-              <button type="submit">Ajouter</button>
+              <div className="form-group">
+                <label htmlFor="nom">Nom :</label>
+                <input
+                  type="text"
+                  id="nom"
+                  value={nom}
+                  onChange={handleNomChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="description">Description :</label>
+                <input
+                  type="text"
+                  id="description"
+                  value={description}
+                  onChange={handleDescriptionChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="quantite">Quantité :</label>
+                <input
+                  type="text"
+                  id="quantite"
+                  value={quantite}
+                  onChange={handleQuantiteChange}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="photo">Photo :</label>
+                <input type="file" id="photo" onChange={handlePhotoChange} />
+              </div>
+              <div className="button-container">
+                <button type="submit">Créer</button>
+                <button type="button" onClick={toggleForm}>
+                  Annuler
+                </button>
+              </div>
             </form>
           </div>
         </div>
       )}
-
       <ToastContainer />
     </div>
   );
