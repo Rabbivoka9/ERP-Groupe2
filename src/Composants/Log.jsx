@@ -6,9 +6,7 @@ import { TextField, IconButton, InputAdornment } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import axios from "axios";
 
-
 function Login() {
-
   const {
     register,
     handleSubmit,
@@ -26,14 +24,16 @@ function Login() {
       .post("http://localhost:5000/connexion", data)
       .then((response) => {
         const { role } = response.data;
-        if (role === "Vendeur") {
-            window.location.href = "/Dasbord"
-    
-        }else if(role ==="Admin"){
-          window.location.href = "/Dashbord_Admin"
-        } 
-        else {
+        const { etat } = response.data;
+        if (etat === "En attente") {
+          if (role === "Vendeur") {
+            window.location.href = "/Dasbord";
+          } else if (role === "Admin") {
+            window.location.href = "/Dashbord_Admin";
+          } else {
+          }
         }
+
         console.log(response.data.role);
       })
       .catch((error) => {
