@@ -59,7 +59,7 @@ function Header_Admin() {
           <div className="btn37 ">
             <img className="icon23" src="CliV.png" alt="" />
             <NavLink to="/Vendeur" className=" papi">
-              Vendeurs
+              Utilisateurs
             </NavLink>
           </div>
           <div className="btn34 ">
