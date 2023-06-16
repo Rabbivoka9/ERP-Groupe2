@@ -19,6 +19,21 @@ body {
 
 .textarea.materialize-textarea:focus{
   background-color: white;
+  border-bottom: white;
+}
+
+.cn{
+  color: #644ACC;
+  font-weight: bold;
+}
+
+.textarea.materialize-textarea{
+  border-bottom: white;
+  background-color: white;
+}
+
+.TextField{
+  border-bottom: white;
 }
 
 .fd{
@@ -91,6 +106,29 @@ body {
   justify-content: center;
   margin-left: -200px;
 
+}
+
+.cvb{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.vv{
+  font-size: 15px;
+  color: #644ACC;
+}
+
+.xe{
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.xe1{
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
 }
 
 .Fond-login {
@@ -266,7 +304,7 @@ input{
 .btn-tous{
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 90px;
   gap: 20px;
 }
 
