@@ -20,7 +20,7 @@ function Dashbord_admin(){
                     <RectAmin/>
                     <RectAdmin2/>
                     <RectAdmin3/>
-                    <h3 className="titreFar">Utilisateurs Recents</h3>
+                    <h3 className="titreFar">Utilisateurs en Attente</h3>
                     <div className="ligneFar"></div>
                 </div>
                 <div className="FormCo">

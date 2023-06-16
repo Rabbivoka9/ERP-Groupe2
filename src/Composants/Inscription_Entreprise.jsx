@@ -20,7 +20,7 @@ function Ajout_EM() {
 
   const onSubmit = (data) => {
     axios
-      .post("http://172.20.10.3:5000/AjoutEM", data)
+      .post("http://localhost:5000/AjoutEM", data)
       .then((response) => {
         setApiResponse(response.data.message);
         setModalOpen(true);
