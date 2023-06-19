@@ -103,7 +103,6 @@ function UserEM() {
                   style: { borderBottom: "0px  #000" },
                 }}
               />
-              
           
             <TextField
               className="outlined-basic"
@@ -117,6 +116,20 @@ function UserEM() {
                 style: { borderBottom: "0px solid #ffff" },
               }}
             />
+
+
+            <TextField
+  className="outlined-basic"
+  {...register("pwdConfirm", { required: true })}
+  label="Confirmation mot de passe"
+  type="file"
+  variant="outlined"
+  error={errors.password ? true : false}
+  helperText={errors.password ? "Le mot de passe est requis" : ""}
+  InputProps={{
+    style: { borderBottom: "0px solid #ffff" },
+  }}
+/>
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
               Creer
             </button>

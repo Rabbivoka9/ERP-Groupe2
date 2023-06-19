@@ -25,9 +25,9 @@ function Dashbord(){
                     <div className="ligneFar"></div>
                 </div>
                 <div className="FormCo">
-                    <FormCota1/>
+                    {/* <FormCota1/>
                     <FormCota2/>
-                    <FormCota3/>
+                    <FormCota3/> */}
                 </div>
             </div>
             

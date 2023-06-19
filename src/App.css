@@ -17,6 +17,7 @@ body {
   font-weight: bold;
 }
 
+
 .textarea.materialize-textarea:focus{
   background-color: white;
   border-bottom: white;
@@ -246,6 +247,18 @@ input{
   align-items: center;
   width: 463px;
   height: 427px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-top: 160px;
+  text-align: center;
+}
+
+.menu-login13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 490px;
+  height: 700px;
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-top: 160px;
@@ -1030,7 +1043,7 @@ input{
  
 }
 
-.btn-plus1:focus{
+.btn-plus1, .btn-plus16:focus{
   background-color: white;
 }
 
@@ -1051,6 +1064,20 @@ input{
   margin-left: -400px;
 }
 
+
+.btn-plus16 {
+  background-color: white;
+  box-shadow: 2px 2px #644ACC ;
+  border-style: none;
+  margin-top: -1380px;
+  width: 124px;
+  height: 31px;
+  border-radius: 10px 10px 10px;
+  font-size: 11px;
+  background-color: #644ACC;
+  color: white;
+  margin-left: -400px;
+}
 
 
 

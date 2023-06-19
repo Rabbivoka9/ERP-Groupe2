@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink,useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import ReactModal from "react-modal";
@@ -51,101 +51,101 @@ function UserVendeur() {
   return (
     <div className="Fond-login1">
       <div className="cont-log">
-        <div className="menu-login1">
+        <div className="menu-login13">
           <div className="titre-connexion">
             <h5>Creation Compte Utilisateur</h5>
           </div>
           <div className="Email1">
-           
-              <div className="outlined-basic">
-                <TextField
-                  {...register("username", { required: true })}
-                  label="username"
-                  name="username"
-                  variant="outlined"
-                  error={errors.email ? true : false}
-                  helperText={errors.email ? "Le nom est requis" : ""}
-                  className="input"
-                  inputProps={{
-                    style: { borderBottom: "0px  #000" },
-                  }}
-                />
-              </div>
-              <div className="outlined-basic">
-                <TextField
-                  {...register("telephone", { required: true })}
-                  label="telephone"
-                  name="telephone"
-                  variant="outlined"
-                  error={errors.email ? true : false}
-                  helperText={errors.email ? "Le nom est requis" : ""}
-                  className="input"
-                  inputProps={{
-                    style: { borderBottom: "0px  #000" },
-                  }}
-                />
-              </div>
+
+            <div className="outlined-basic">
               <TextField
-                {...register("email", {
-                  required: true,
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "L'adresse e-mail n'est pas valide",
-                  },
-                })}
-                label="Email"
-                name="email"
+                {...register("username", { required: true })}
+                label="username"
+                name="username"
                 variant="outlined"
                 error={errors.email ? true : false}
-                helperText={errors.email ? "La Description est requise" : ""}
+                helperText={errors.email ? "Le nom est requis" : ""}
                 className="input"
                 inputProps={{
                   style: { borderBottom: "0px  #000" },
                 }}
               />
+            </div>
+            <div className="outlined-basic">
+              <TextField
+                {...register("telephone", { required: true })}
+                label="telephone"
+                name="telephone"
+                variant="outlined"
+                error={errors.email ? true : false}
+                helperText={errors.email ? "Le nom est requis" : ""}
+                className="input"
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+            </div>
+            <TextField
+              {...register("email", {
+                required: true,
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "L'adresse e-mail n'est pas valide",
+                },
+              })}
+              label="Email"
+              name="email"
+              variant="outlined"
+              error={errors.email ? true : false}
+              helperText={errors.email ? "La Description est requise" : ""}
+              className="input"
+              inputProps={{
+                style: { borderBottom: "0px  #000" },
+              }}
+            />
 
 
             <TextField
-                {...register("pwd", { required: true })}
-               
-                label="Mot de passe"
-                type={showPassword ? "text" : "password"}
-                variant="outlined"
+              {...register("pwd", { required: true })}
 
-                error={errors.password ? true : false}
-                helperText={errors.password ? "Le mot de passe est requis" : ""}
-          
-                inputProps={{
-                  style: { borderBottom: "0px  #000" },
-                }}
-              />
+              label="Mot de passe"
+              type={showPassword ? "text" : "password"}
+              variant="outlined"
+
+              error={errors.password ? true : false}
+              helperText={errors.password ? "Le mot de passe est requis" : ""}
+
+              inputProps={{
+                style: { borderBottom: "0px  #000" },
+              }}
+            />
 
 
-              <TextField
-                 {...register("pwdConfirm", { required: true })}
-                 label="Confirmation mot de passe"
-                 type={showPassword ? "text" : "password"}
-                 variant="outlined"
+            <TextField
+              {...register("pwdConfirm", { required: true })}
+              label="Confirmation mot de passe"
+              type={showPassword ? "text" : "password"}
+              variant="outlined"
 
-                 error={errors.password ? true : false}
-                 helperText={errors.password ? "Le mot de passe est requis" : ""}
-          
-                inputProps={{
-                  style: { borderBottom: "0px  #000" },
-                }}
-              />
+              error={errors.password ? true : false}
+              helperText={errors.password ? "Le mot de passe est requis" : ""}
+
+              inputProps={{
+                style: { borderBottom: "0px  #000" },
+              }}
+            />
 
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
               Creer
             </button>
 
             <div className="cvb">
-            <img className="xe1"  src="lienok.png" alt="" />
+              <img className="xe1" src="lienok.png" alt="" />
               <NavLink to="/Inscription" className="vv">J'ai une Entreprise</NavLink>
             </div>
 
 
-            
+
           </div>
         </div>
       </div>
