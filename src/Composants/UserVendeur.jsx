@@ -5,7 +5,7 @@ import axios from "axios";
 import ReactModal from "react-modal";
 import { TextField } from "@mui/material";
 
-function UserEM() {
+function UserVendeur() {
   const { id } = useParams();
   const {
     register,
@@ -103,23 +103,49 @@ function UserEM() {
                   style: { borderBottom: "0px  #000" },
                 }}
               />
-              
-          
+
+
             <TextField
-              className="outlined-basic"
-              {...register("pwdConfirm", { required: true })}
-              label="Confirmation mot de passe"
-              type={showPassword ? "text" : "password"}
-              variant="outlined"
-              error={errors.password ? true : false}
-              helperText={errors.password ? "Le mot de passe est requis" : ""}
-              InputProps={{
-                style: { borderBottom: "0px solid #ffff" },
-              }}
-            />
+                {...register("pwd", { required: true })}
+               
+                label="Mot de passe"
+                type={showPassword ? "text" : "password"}
+                variant="outlined"
+
+                error={errors.password ? true : false}
+                helperText={errors.password ? "Le mot de passe est requis" : ""}
+          
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+
+
+              <TextField
+                 {...register("pwdConfirm", { required: true })}
+                 label="Confirmation mot de passe"
+                 type={showPassword ? "text" : "password"}
+                 variant="outlined"
+
+                 error={errors.password ? true : false}
+                 helperText={errors.password ? "Le mot de passe est requis" : ""}
+          
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
               Creer
             </button>
+
+            <div className="cvb">
+            <img className="xe1"  src="lienok.png" alt="" />
+              <NavLink to="/Inscription" className="vv">J'ai une Entreprise</NavLink>
+            </div>
+
+
+            
           </div>
         </div>
       </div>
@@ -137,4 +163,4 @@ function UserEM() {
   );
 }
 
-export default UserEM;
+export default UserVendeur;

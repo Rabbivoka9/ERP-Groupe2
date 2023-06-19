@@ -52,13 +52,13 @@ function Inscription() {
       <div className="cont-log">
         <div className="menu-login1">
           <div className="titre-connexion">
-            <h5>Inscription</h5>
+            <h5>Enregister votre Entreprise</h5>
           </div>
           <div className="Email1">
             <div className="outlined-basic">
               <TextField
                 {...register("nom", { required: true })}
-                label="Nom"
+                label="Nom_Entreprise"
                 name="nom"
                 variant="outlined"
                 error={errors.email ? true : false}
@@ -73,7 +73,7 @@ function Inscription() {
             <div className="outlined-basic">
               <TextField
                 {...register("description", { required: true })}
-                label="Description"
+                label="Description_Entreprise"
                 name="description"
                 variant="outlined"
                 error={errors.email ? true : false}
@@ -94,7 +94,7 @@ function Inscription() {
                     message: "L'adresse e-mail n'est pas valide",
                   },
                 })}
-                label="Email"
+                label="Adress_Email"
                 name="email"
                 variant="outlined"
                 error={errors.email ? true : false}
@@ -109,6 +109,12 @@ function Inscription() {
             <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
               S'inscrire
             </button>
+
+            <div className="cvb">
+              <img className="xe"  src="lienok.png" alt="" />
+              <p> <NavLink to="/UserVendeur" className=" vv">Je suis un Particulier</NavLink></p>  
+            </div>
+              
             <div>
               <p>
                 Vous avez un compte?{" "}
