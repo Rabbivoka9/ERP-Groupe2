@@ -1,6 +1,6 @@
 import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import TCotation from "../Composants/Dcotation"
+import Cotationtable from "../Composants/Cotationtable"
 
 function Dcotation(){
        return(
@@ -13,7 +13,7 @@ function Dcotation(){
               </div>
               <div>
 
-                <TCotation/>
+                <Cotationtable/>
 
               </div>
               

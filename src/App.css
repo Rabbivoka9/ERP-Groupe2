@@ -18,6 +18,8 @@ body {
 }
 
 
+
+
 .textarea.materialize-textarea:focus{
   background-color: white;
   border-bottom: white;
@@ -40,6 +42,11 @@ body {
 .fd{
 
   margin-left: -70px;
+}
+
+.fd1{
+
+  margin-left: 70px;
 }
 
 .tr{
@@ -176,6 +183,34 @@ body {
 
 }
 
+.input13{
+  text-align: center;
+  font-size: 12px;
+  width: 800px;
+}
+
+.cb{
+  display: flex;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.input14{
+  text-align: center;
+  font-size: 12px;
+  width: 800px;
+  height: 80px;
+}
+
+
+
+.input16{
+  text-align: center;
+  font-size: 12px;
+  width: 300px;
+  height: 80px;
+}
+
 input{
   text-align: center;
   font-size: 12px;
@@ -299,6 +334,19 @@ input{
   text-align: center;
 }
 
+.menu-AjoutEM12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 990px;
+  height: 597px;
+  background-color: white;
+  border-radius: 20px 20px 20px;
+  margin-top: 230px;
+  margin-left: 80px;
+  text-align: center;
+}
+
 
 .formulaire{
   margin-left: -125px;
@@ -306,6 +354,15 @@ input{
 
 
 .Email1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: none;
+  margin-top: 40px;
+  gap: 20Px;
+}
+
+.Email11 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,6 +450,23 @@ input{
   font-weight: bold;
   font-size: 24px;
   border: solid 1px white;
+  padding: 30px;
+  box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0);
+}
+
+
+.titre-connexion16 {
+  width: 674px;
+  height: 121px;
+  border-radius: 20px 20px 20px;
+  background-color: #644ACC;
+  margin-top: -70px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border: solid 1px white;
+  font-weight: bold;
   padding: 30px;
   box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0);
 }
@@ -1129,6 +1203,19 @@ input{
 
 .gt{
   margin-left: -210px;
+}
+
+
+
+.Cont-tableau14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1409px;
+  height: auto;
+  border-radius: 20px 20px 20px;
+  margin-left: -1330px;
+  margin-top: 240px;
 }
 
 

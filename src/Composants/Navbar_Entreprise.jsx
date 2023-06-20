@@ -33,7 +33,7 @@ function Header_entreprise() {
         }}
       >
         <div className="btn23">
-          <div className="btn31 isActive">
+          <div className="btn31">
             <div className="vc">
               <img className="icon23" src="tb.png" alt="" />
             </div>
@@ -46,25 +46,25 @@ function Header_entreprise() {
          
          
          
-          <div className="btn37 isActive">
+          <div className="btn37">
             <img className="icon23" src="edi.png" alt="" />
             <NavLink to="/Dcotation" className=" papi">
               Cotation
             </NavLink>
           </div>
-          <div className="btn37 isActive">
+          <div className="btn37">
             <img className="icon23" src="gestion.png" alt="" />
             <NavLink to="/Goffres" className=" papi">
               Gestion d'Offres
             </NavLink>
           </div>
-          <div className="btn37 isActive">
+          <div className="btn37">
             <img className="icon23" src="fou.png" alt="" />
             <NavLink to="/fournisseurs" className=" papi">
               Fournisseurs
             </NavLink>
           </div>
-          <div className="btn37 isActive">
+          <div className="btn37">
             <img className="icon23" src="commande.png" alt="" />
             <NavLink to="/CommandeEm" className=" papi">
               Commandes

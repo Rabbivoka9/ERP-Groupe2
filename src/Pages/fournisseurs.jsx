@@ -1,6 +1,6 @@
 import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import Tabfour from "../Composants/Four"
+import Fourni from "../Composants/Fourni"
 
 function Fournisseurs(){
 
@@ -14,7 +14,7 @@ function Fournisseurs(){
               </div>
               <div>
 
-                <Tabfour/>
+                <Fourni/>
                 
               </div>
               

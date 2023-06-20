@@ -1,7 +1,7 @@
 
 import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import TcomE from "../Composants/ComandeEm"
+import Commande0K from "../Composants/CommandeOK"
 
 
 function CommandeEm (){
@@ -16,7 +16,7 @@ function CommandeEm (){
               </div>
 
               <div>
-                <TcomE/>
+                <Commande0K/>
               </div>
               
       

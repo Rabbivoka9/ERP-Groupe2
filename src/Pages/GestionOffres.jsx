@@ -1,9 +1,9 @@
-
+import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import Tentrep from "../Composants/Entreprise"
+import GgOffres from "../Composants/GestionOffres"
 
 
-function Entreprise (){
+function GestionCotation (){
 
        return (
 
@@ -11,12 +11,13 @@ function Entreprise (){
               <div className="tout1">
             
               <div className="bordu">
+                  <Header_entreprise/>
                   <Bar/>
               </div>
 
               <div>
                
-                  <Tentrep/>
+                  <GgOffres/>
                 
 
                 
@@ -28,4 +29,4 @@ function Entreprise (){
           </div>
 
        )
-} export default Entreprise
+} export default GestionCotation

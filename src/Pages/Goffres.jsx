@@ -1,6 +1,6 @@
 import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import Toffres from "../Composants/Goffres"
+import GgOffres from "../Composants/GestionOffres"
 
 function Goffres (){
        return(
@@ -14,7 +14,7 @@ function Goffres (){
 
               <div>
 
-                <Toffres/>
+                <GgOffres/>
 
               </div>
               

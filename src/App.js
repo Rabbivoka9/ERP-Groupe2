@@ -28,6 +28,7 @@ import Edit_EntepriseEm from './Pages/Edit_EnterpriseEM';
 import Ajout_Em from './Pages/Ajout_EM';
 import User_Em from './Composants/UserEM';
 import UserVendeur from './Composants/UserVendeur';
+import DemandeDeCotation from './Composants/Demande_Cotation';
 
 Modal.setAppElement('#root');
 
@@ -59,6 +60,7 @@ function App() {
        <Route path="/User_Em/:id" element={<User_Em/>}></Route>
        <Route path="/Ajout_Em" element={<Ajout_Em/>}></Route>
        <Route path="/UserVendeur" element={<UserVendeur/>}></Route>
+       <Route path="/DemandeDeCotation" element={<DemandeDeCotation/>}></Route>
        <Route path="/Conf" element={<Configuration/>}></Route>
       
      </Routes>
