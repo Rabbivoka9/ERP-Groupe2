@@ -3,7 +3,7 @@ import Bar from "../Composants/BarRech"
 import FormProd from "../Composants/FormProd1"
 import FormProd2 from "../Composants/FormProd2"
 import FormProd3 from "../Composants/FormProd3"
-import Tableau from "../Composants/Tableau"
+import TabProd from "../Composants/TabProd"
 
 
 
@@ -27,7 +27,7 @@ function Productions(){
               <FormProd3/>
             </div>
            <div className="gt">
-             <Tableau/> 
+             <TabProd/> 
            </div>
         </div>
         

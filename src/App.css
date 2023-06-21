@@ -142,9 +142,9 @@ body {
 .Fond-login {
   background-image: url("/public/Connexion.png");
   background-size: cover;
-  height: 786px;
+  height: 1000px;
   width: auto;
-  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.4);
+ 
 }
 
 .Fond-login1 {
@@ -272,7 +272,8 @@ input{
 
 
 .log-icon {
-  width: 758px;
+  width: 858px;
+  margin-left: 30px;
 }
 
 
@@ -281,7 +282,7 @@ input{
   flex-direction: column;
   align-items: center;
   width: 463px;
-  height: 427px;
+  height: 527px;
   background-color: white;
   border-radius: 20px 20px 20px;
   margin-top: 160px;
@@ -1219,6 +1220,18 @@ input{
 }
 
 
+.Cont-tableau35 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1409px;
+  height: auto;
+  border-radius: 20px 20px 20px;
+  margin-left: -1230px;
+  margin-top: 40px;
+}
+
+
 
 
 
@@ -1795,6 +1808,25 @@ body {
     color: white;
     margin-left: 180px;
   }
+
+
+  .btn-plus80 {
+    background-color: white;
+    border-style: none;
+    margin-top: 70px;
+    width: 124px;
+    height: 31px;
+    border-radius: 10px 10px 10px;
+    font-size: 11px;
+    background-color: #644ACC;
+    color: white;
+    margin-left: 180px;
+
+    margin-top: 180px;
+  }
+
+
+
 
   .Cont-tableau3 {
     display: flex;
