@@ -1,7 +1,7 @@
 
-import Header from "../Composants/Navbar"
+import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import TcomE from "../Composants/ComandeEm"
+import Commande0K from "../Composants/CommandeOK"
 
 
 function CommandeEm (){
@@ -11,12 +11,12 @@ function CommandeEm (){
        <div className="tout1">
             
               <div className="bordu">
-                  <Header/>
+                  <Header_entreprise/>
                   <Bar/>
               </div>
 
               <div>
-                <TcomE/>
+                <Commande0K/>
               </div>
               
       

@@ -1,6 +1,6 @@
-import Header from "../Composants/Navbar"
+import Header_entreprise from "../Composants/Navbar_Entreprise"
 import Bar from "../Composants/BarRech"
-import TCotation from "../Composants/Dcotation"
+import Cotationtable from "../Composants/Cotationtable"
 
 function Dcotation(){
        return(
@@ -8,12 +8,12 @@ function Dcotation(){
               <div className="tout1">
             
               <div className="bordu">
-                  <Header/>
+                  <Header_entreprise/>
                   <Bar/>
               </div>
               <div>
 
-                <TCotation/>
+                <Cotationtable/>
 
               </div>
               

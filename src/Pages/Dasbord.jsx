@@ -6,6 +6,7 @@ import Recta3 from "../Composants/recta3"
 import FormCota1 from "../Composants/FormCotation"
 import FormCota2 from "../Composants/FormCotation1"
 import FormCota3 from "../Composants/FormCotation3"
+import Dashbord_admin from "../Composants/Dashbord_Admin"
 
 function Dashbord(){
     return(
@@ -24,15 +25,13 @@ function Dashbord(){
                     <div className="ligneFar"></div>
                 </div>
                 <div className="FormCo">
-                    <FormCota1/>
+                    {/* <FormCota1/>
                     <FormCota2/>
-                    <FormCota3/>
+                    <FormCota3/> */}
                 </div>
             </div>
             
             
-
-
             
         </div>
     )

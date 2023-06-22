@@ -1,4 +1,4 @@
-import Header from "../Composants/Navbar"
+import Header_Admin from "../Composants/Navbar_Admin"
 import Bar from "../Composants/BarRech"
 import Tarticle from "../Composants/Article"
 
@@ -10,7 +10,7 @@ function Articles (){
               <div className="tout1">
             
               <div className="bordu">
-                  <Header/>
+                  <Header_Admin/>
                   <Bar/>
               </div>
 

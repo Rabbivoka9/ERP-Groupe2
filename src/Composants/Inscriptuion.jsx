@@ -1,104 +1,143 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import ReactModal from "react-modal";
+import { TextField } from "@mui/material";
 
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { TextField } from '@mui/material';
-function Inscription(){
+function Inscription() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-        reset,
-        clearErrors
-      } = useForm();  const onSubmit = (data) => {
-        console.log(data);    // Réinitialiser le formulaire
-        reset();
-        clearErrors();
-      }  
-        const [showPassword, setShowPassword] = useState()  
-        const handleClickShowPassword = () => {
-        setShowPassword(!showPassword);
-      };
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [apiResponse, setApiResponse] = useState("");
 
-    return(
-        <div className="Fond-login1">
-            <div className="cont-log">
-                <div className="menu-login1">
-                    <div className="titre-connexion">
-                      <h5>Inscription</h5>
-                    </div>
-                    <div className='Email1' >
+  const onSubmit = (data) => {
+    axios
+      .post("http://localhost:5000/inscription", data)
+      .then((response) => {
+        setApiResponse(response.data.message);
+        setModalOpen(true);
+      })
+      .catch((error) => {
+        if (
+          error.response &&
+          error.response.data &&
+          error.response.data.error
+        ) {
+          setApiResponse(error.response.data.error);
+          setModalOpen(true);
+        } else {
+          console.error(error);
+        }
+      });
+  };
 
-                      <div className='outlined-basic'>
-                          <TextField 
-                            {...register('fullName', { required: true })}
-                            label="Nom"
-                            variant="outlined"                           
-                            error={errors.email ? true : false}
-                            helperText={errors.email ? 'Le nom est requis' : ''}
-                            className='input'
-                            inputProps={{
-                            style: { borderBottom: '0px  #000' } }}
-                          />
-                       </div>
+  const closeModal = () => {
+    setModalOpen(false);
 
-                        <div className='outlined-basic'>
-                          <TextField 
-                            {...register('Description', { required: true })}
-                            label="Description"
-                            variant="outlined"
-                            error={errors.email ? true : false}
-                            helperText={errors.email ? 'La Description est requise' : ''}
-                            className='input'
-                            inputProps={{
-                            style: { borderBottom: '0px  #000' } }}
+    if (
+      apiResponse ===
+      "Compte crée avec succès, veuillez consulter votre boite mail"
+    ) {
+      window.location.href = "/";
+    }
+  };
 
-                          />
-                        </div>
+  return (
+    <div className="Fond-login1">
+      <div className="cont-log">
+        <div className="menu-login1">
+          <div className="titre-connexion">
+            <h5>Enregister votre Entreprise</h5>
+          </div>
+          <div className="Email1">
+            <div className="outlined-basic">
+              <TextField
+                {...register("nom", { required: true })}
+                label="Nom_Entreprise"
+                name="nom"
+                variant="outlined"
+                error={errors.email ? true : false}
+                helperText={errors.email ? "Le nom est requis" : ""}
+                className="input"
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+            </div>
 
-               
-                        <div className='outlined-basic'>
-                          <TextField 
-                            {...register('email', { required: true })}
-                            label="Email"
-                            variant="outlined"
-                            error={errors.email ? true : false}
-                            helperText={errors.email ? 'L\'email est requis' : ''}
-                            className='input'
-                            inputProps={{
-                            style: { borderBottom: '0px #000' } }}
-                          />
-                        </div>
-                        
-                         {/* Champ de formulaire pour la photo de profil */}
-                         <div className="profile-photo-box">
-                           {/* <label htmlFor="profilePhoto">profil</label> */}
-                           <input
-                             {...register('profilePhoto')}
-                             type="file"
-                             accept="image/*"
-                             id="profilePhoto"
-                             className='input'
-                           />
-                         </div>
+            <div className="outlined-basic">
+              <TextField
+                {...register("description", { required: true })}
+                label="Description_Entreprise"
+                name="description"
+                variant="outlined"
+                error={errors.email ? true : false}
+                helperText={errors.email ? "La Description est requise" : ""}
+                className="input"
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+            </div>
 
-                      
-            <button className='btn-Conex'><NavLink to="/Login" className="ab papi">S'Inscrire</NavLink></button>
+            <div className="outlined-basic">
+              <TextField
+                {...register("email", {
+                  required: true,
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "L'adresse e-mail n'est pas valide",
+                  },
+                })}
+                label="Adress_Email"
+                name="email"
+                variant="outlined"
+                error={errors.email ? true : false}
+                helperText={errors.email ? "La Description est requise" : ""}
+                className="input"
+                inputProps={{
+                  style: { borderBottom: "0px  #000" },
+                }}
+              />
+            </div>
+
+            <button className="btn-Conex" onClick={handleSubmit(onSubmit)}>
+              S'inscrire
+            </button>
+
+            <div className="cvb">
+              <img className="xe"  src="lienok.png" alt="" />
+              <p> <NavLink to="/UserVendeur" className=" vv">Je suis un Particulier</NavLink></p>  
+            </div>
+              
             <div>
-
-                <p>Vous avais un compte?  <NavLink to="/" className="ab papi">Se connecter</NavLink></p>
-                
-                
+              <p>
+                Vous avez un compte?{" "}
+                <NavLink to="/" className="ab papi">
+                  Se connecter
+                </NavLink>
+              </p>
             </div>
-                  
-                </div>
-
-
-                </div>
-               
-                
-            </div>
+          </div>
         </div>
-    )
-}export default Inscription
+      </div>
+      <ReactModal
+        className="Mod"
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+      >
+        <h2 className="titre-api">{JSON.stringify(apiResponse)}</h2>
+        <button className="btn-ferme" onClick={closeModal}>
+          Fermer
+        </button>
+      </ReactModal>
+    </div>
+  );
+}
+
+export default Inscription;

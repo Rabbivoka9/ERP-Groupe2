@@ -1,7 +1,5 @@
 
-import { Table } from "react-materialize"
-import { Icon } from "@iconify/react";
-import BasicMenu from "./Btn";
+
 
 
 function TabCompt (){
@@ -16,7 +14,7 @@ function TabCompt (){
                 </div>
                 <div>
                 <table className="ta-titre1 ">
-          <tbody>
+               <tbody>
            
                <tr className="colums,tira" >
                   <th>Date</th>
